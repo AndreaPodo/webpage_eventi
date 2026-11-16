@@ -1,0 +1,73 @@
+Giorno;Titolo;Luogo;Città;Link;Prezzo;Categoria;Fine;Orario
+16-11-2026;Grigory Sokolov;Teatro Auditorium Manzoni;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/events/grigory-sokolov-16nov2026;;Classica; ;20:30
+16-11-2026;Eugenio in Via Di Gioia;Estragon Club;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/calendario-citta-della-musica;;Indie pop;;21:00
+16-11-2026;The Chameleons;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/calendario-citta-della-musica;;Post-punk;;21:30
+17-11-2026;Soul Mates – Milone Todeschini Grandi Trio;Teatro Mazzacorati 1763;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/events/soul-mates-milone-todeschini-grandi-trio-17nov2026;Gratuito;Jazz;;21:00
+17-11-2026;Wish You Were Here – Pink Floyd tribute;Teatro Duse;Bologna;https://teatroduse.it/;;Tributo rock;;21:00
+17-11-2026;The Veils;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/calendario-citta-della-musica;;Indie rock;;21:30
+18-11-2026;La sera dei miracoli – Omaggio a Lucio Dalla;Teatro Duse;Bologna;https://teatroduse.it/;23;Tributo;;21:00
+18-11-2026;Girls in Hawaii;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/calendario-citta-della-musica;;Indie rock;;21:30
+19-11-2026;Pinguini Tattici Nucleari;Covo Club;Bologna;https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop rock;;21:00
+19-11-2026;Marlene Kuntz;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/calendario-citta-della-musica;;Alternative rock;;21:30
+19-11-2026;Budapest Festival Orchestra – Ivan Fischer;Teatro Comunale;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica sinfonica;;20:30
+20-11-2026;Ivor Bolton | Haydn;Teatro Auditorium Manzoni;Bologna;https://www.tcbo.it/stagione-presente/;;Classica sinfonica;;20:30
+20-11-2026;Anna Castiglia;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/lang/it/calendario-citta-della-musica;;Cantautorato;;21:30
+21-11-2026;Shiva;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Rap;;21:00
+22-11-2026;Francesca Michielin;Teatro EuropAuditorium;Bologna;https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop;;21:00
+22-11-2026;Vincenzo Bosco 6ET + guests;La Tenda;Modena;https://latenda.comune.modena.it/calendario;;Jazz;; 
+23-11-2026;Francesca Dego e Francesca Leonardi;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/event/;;Classica;;20:30
+25-11-2026;Malika Ayane;Teatro Duse;Bologna;https://teatroduse.it/;;Pop;;21:00
+27-11-2026;Claudio Vignali & Antonello Salis – Beatles and more;La Tenda;Modena;https://latenda.comune.modena.it/calendario;;Jazz / tributo;;
+28-11-2026;Jesus Ain’t in Poland + Shrieking Demons;La Tenda;Modena;https://latenda.comune.modena.it/archivio/2026-2027/novembre/live-rock-jesus-ain2019t-in-poland-shrieking-demons-guests;Gratuito;Metal / hardcore;;21:00
+01-12-2026;Soweto Gospel Choir – Joy;Teatro EuropAuditorium;Bologna;https://www.bolognawelcome.com/it/eventi;;Gospel;;
+01-12-2026;Filippo Gorini;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica;;20:30
+02-12-2026;Cesare Cremonini;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop rock;;
+05-12-2026;Random;Vox Club;Nonantola (MO);https://www.canzoni.it/concerti/italia/modena/;;Dance / pop;;23:00
+05-12-2026;Greg Osby & Ethan Iverson;Jazz Club Ferrara;Ferrara;https://www.inferrara.it/agenda-eventi;;Jazz;;
+06-12-2026;Lou Marini & The Italian Groovers;Jazz Club Ferrara;Ferrara;https://www.inferrara.it/agenda-eventi;;Jazz;;
+07-12-2026;Macy Gray;Vox Club;Nonantola (MO);https://www.canzoni.it/concerti/italia/modena/;;Soul / R&B;;21:00
+07-12-2026;Dave Douglas Quartet;Jazz Club Ferrara;Ferrara;https://www.inferrara.it/agenda-eventi;;Jazz;;
+10-12-2026;Arisa | Live Tour;Teatro EuropAuditorium;Bologna;https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop;;
+11-12-2026;Giuse The Lizia;Estragon Club;Bologna;https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Indie pop;;
+11-12-2026;Giuditta Franco Quintet;Jazz Club Ferrara;Ferrara;https://www.inferrara.it/agenda-eventi;;Jazz;;
+12-12-2026;Root 70;Jazz Club Ferrara;Ferrara;https://www.inferrara.it/agenda-eventi;;Jazz;;
+14-12-2026;Cappella Neapolitana, Ian Bostridge, Antonio Florio;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/event/cappella-neapolitana-ian-bostridge-antonio-florio/;;Musica antica;;
+17-12-2026;Concerto di Natale – Jordi Savall, Hespèrion XXI;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Musica antica;;20:30
+17-12-2026;Anna;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Rap;;
+19-12-2026;Orchestra della Toscana;Teatro Ebe Stignani;Imola;https://www.culturaimola.it/festivals/erf-stignanimusica-26-27;;Classica sinfonica;;21:00
+19-12-2026;Irama;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop;;
+20-12-2026;Madame;Estragon Club;Bologna;https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop / rap;;
+20-12-2026;Il Volo;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop lirico;;
+22-12-2026;Modena Suona Walt Disney – Gran Concerto;Teatro Michelangelo;Modena;https://www.canzoni.it/concerti/italia/modena/;;Colonne sonore;;
+08-01-2027;Beatrice Rana;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/event/beatrice-rana-4/;;Classica;;20:30
+15-01-2027;Michele Bravi | Commedia Musicale Tour;Teatro EuropAuditorium;Bologna;https://teatroeuropa.it/;;Pop / musical;;21:00
+16-01-2027;Beaux Arts Solisten Köln e Alexander Hülshoff;Teatro Ebe Stignani;Imola;https://www.culturaimola.it/festivals/erf-stignanimusica-26-27;;Classica da camera;;21:00
+19-01-2027;Quartetto Werther;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica da camera;;18:00
+23-01-2027;Tedua;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Rap;;
+25-01-2027;Orchestra di Padova e del Veneto;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica sinfonica;;20:30
+25-01-2027;Pablo Barragán, Edgar Moreau, Martina Consonni;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/;;Classica da camera;;20:30
+27-01-2027;The Zen Circus;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/calendario-citta-della-musica;;Rock;;
+28-01-2027;The Zen Circus;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/calendario-citta-della-musica;;Rock;;
+29-01-2027;The Zen Circus;Locomotiv Club;Bologna;https://cittadellamusica.comune.bologna.it/calendario-citta-della-musica;;Rock;;
+01-02-2027;Trio Kobalt;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica da camera;;18:00
+05-02-2027;Max Pezzali;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop rock;;21:00
+06-02-2027;Max Pezzali;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop rock;;21:00
+08-02-2027;Max Pezzali;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Pop rock;;21:00
+08-02-2027;Julian Kainrath e Lilya Zilberstein;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/;;Classica da camera;;20:30
+09-02-2027;Caroline Widmann e Gabriele Carcano;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica;;20:30
+12-02-2027;Nelson Goerner;Teatro Ebe Stignani;Imola;https://www.culturaimola.it/festivals/erf-stignanimusica-26-27;;Classica;;21:00
+13-02-2027;Sfera Ebbasta;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Rap;;
+23-02-2027;Accademia Bizantina – Ottavio Dantone;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Barocco;;20:30
+27-02-2027;Gabry Ponte;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Dance;;
+05-03-2027;z e h n (ten) – BartolomeyBittmann;Teatro Ebe Stignani;Imola;https://www.culturaimola.it/festivals/erf-stignanimusica-26-27;;Crossover acustico;;21:00
+15-03-2027;Chamber Orchestra of Europe – András Schiff;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica sinfonica;;20:30
+18-03-2027;Orchestra del Teatro Comunale di Bologna, Gautier Capuçon, Lera Auerbach;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/;;Classica sinfonica;;20:30
+18-03-2027;Olaf John Laneri;Teatro Ebe Stignani;Imola;https://www.culturaimola.it/festivals/erf-stignanimusica-26-27;;Classica;;21:00
+31-03-2027;Orchestra Nazionale della RAI;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica sinfonica;;20:30
+09-04-2027;Gianna Nannini;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Rock;;
+12-04-2027;Katia e Marielle Labèque;Teatro Auditorium Manzoni;Bologna;https://www.musicainsiemebologna.it/;;Classica da camera;;20:30
+14-04-2027;Yuki Serino e Martin Nöbauer;Teatro Ebe Stignani;Imola;https://www.culturaimola.it/festivals/erf-stignanimusica-26-27;;Classica da camera;;21:00
+17-04-2027;Simple Minds;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Rock;;
+18-04-2027;Gazzelle;Unipol Arena;Casalecchio di Reno (BO);https://www.bolognawelcome.com/it/blog/concerti-da-vedere-a-bologna;;Indie pop;;
+19-04-2027;Mao Fujita;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica pianistica;;20:30
+27-04-2027;Orchestra Città di Ferrara;Teatro Comunale Claudio Abbado;Ferrara;https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/musica-teatro-danza/stagione-concertistica-2026-2027;;Classica contemporanea;;20:30
