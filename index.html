@@ -254,6 +254,7 @@ footer {
     }
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 </head>
 
 <body>
@@ -465,35 +466,44 @@ function renderMonth(month) {
 
 async function loadAppointments() {
     try {
+        let rows;
         const response = await fetch("./spettacoli.txt", { cache: "no-store" });
-        if (!response.ok) throw new Error("File TXT non trovato");
-
-        const content = (await response.text()).replace(/^\\uFEFF/, "");
-        const rows = parseDelimited(content);
-        if (rows.length < 2) throw new Error("Calendario TXT vuoto o non valido");
-
-        const headers = rows[0].map(value => value.trim());
-        const index = name => headers.findIndex(value => value.toLowerCase() === name.toLowerCase());
-        const dayIndex = index("Giorno");
-        const titleIndex = index("Titolo");
-        const visibleIndex = index("Visibile");
-
-        if (dayIndex < 0 || titleIndex < 0 || visibleIndex < 0) {
-            throw new Error("Intestazioni richieste mancanti nel TXT");
+        if (response.ok) {
+            const content = (await response.text()).replace(/^\\uFEFF/, "");
+            rows = parseDelimited(content);
+            if (rows.length < 2) throw new Error("Calendario TXT vuoto o non valido");
+            const headers = rows[0].map(value => value.trim());
+            const index = name => headers.findIndex(value => value.toLowerCase() === name.toLowerCase());
+            const dayIndex = index("Giorno");
+            const titleIndex = index("Titolo");
+            const visibleIndex = index("Visibile");
+            if (dayIndex < 0 || titleIndex < 0 || visibleIndex < 0) throw new Error("Intestazioni TXT mancanti");
+            appointments = rows.slice(1).map(row => ({
+                day: normalizeDate(row[dayIndex]),
+                title: String(row[titleIndex] ?? "").trim(),
+                visible: String(row[visibleIndex] ?? "").trim().toUpperCase()
+            })).filter(item => item.day && item.title && item.visible === "SI");
+        } else {
+            const legacy = await fetch("./spettacoli.xlsx", { cache: "no-store" });
+            if (!legacy.ok) throw new Error("Né spettacoli.txt né spettacoli.xlsx sono disponibili");
+            const workbook = XLSX.read(await legacy.arrayBuffer(), { type: "array" });
+            const sheet = workbook.Sheets[workbook.SheetNames[0]];
+            const data = XLSX.utils.sheet_to_json(sheet, { defval: "" });
+            appointments = data.map(row => {
+                const keys = Object.keys(row);
+                const get = name => keys.find(key => key.trim().toLowerCase() === name.toLowerCase());
+                const dayKey = get("Giorno"), titleKey = get("Titolo"), visibleKey = get("Visibile");
+                return {
+                    day: normalizeDate(row[dayKey]),
+                    title: String(row[titleKey] ?? "").trim(),
+                    visible: String(row[visibleKey] ?? "SI").trim().toUpperCase()
+                };
+            }).filter(item => item.day && item.title && item.visible === "SI");
         }
-
-        appointments = rows.slice(1).map(row => ({
-            day: normalizeDate(row[dayIndex]),
-            title: String(row[titleIndex] ?? "").trim(),
-            visible: String(row[visibleIndex] ?? "").trim().toUpperCase()
-        })).filter(item =>
-            item.day &&
-            item.title &&
-            item.visible === "SI" &&
+        appointments = appointments.filter(item =>
             item.day.startsWith(String(YEAR) + "-") &&
             ["11", "12"].includes(item.day.slice(5, 7))
         );
-
         renderAll();
     } catch (error) {
         console.error("Errore caricamento appuntamenti:", error);
