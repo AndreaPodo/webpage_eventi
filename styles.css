@@ -304,3 +304,31 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* Day cells open the complete list for the selected date. */
+.day-clickable { cursor: pointer; }
+.day-clickable:hover { background: rgba(154, 140, 255, .075); }
+.day-clickable:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: -3px; }
+
+.event-modal {
+  max-height: min(82vh, 760px);
+  overflow-y: auto;
+}
+.modal-event-list { display: grid; gap: 15px; }
+.modal-event-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, .025);
+}
+.modal-event-card + .modal-event-card { margin-top: 0; }
+.modal-event-name {
+  margin: 0 0 14px;
+  color: var(--text);
+  font: 700 16px/1.35 Manrope, sans-serif;
+}
+.modal-event-card .modal-details { gap: 11px; }
+.modal-event-card .modal-details dd { font-size: 13px; }
+.modal-event-card .modal-link { margin-top: 14px; }
+.modal-empty { margin: 0; color: var(--muted-strong); font-size: 13px; }
