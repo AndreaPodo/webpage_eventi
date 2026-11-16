@@ -1,6 +1,6 @@
 /* Event data loader
  * Restituisce sempre eventi normalizzati:
- * { date: "YYYY-MM-DD", title, theater, link, price, visible }
+ * { date: "YYYY-MM-DD", title, theater, link, price, category }
  */
 (function (global) {
   "use strict";
@@ -78,7 +78,7 @@
       theater: headerIndex(headers, "Teatro"),
       link: headerIndex(headers, "Link"),
       price: headerIndex(headers, "Prezzo"),
-      visible: headerIndex(headers, "Visibile")
+      category: headerIndex(headers, "Categoria")
     };
 
     if (indexes.date < 0 || indexes.title < 0) {
@@ -91,8 +91,8 @@
       theater: indexes.theater >= 0 ? row[indexes.theater] : "",
       link: indexes.link >= 0 ? row[indexes.link] : "",
       price: indexes.price >= 0 ? row[indexes.price] : "",
-      visible: indexes.visible >= 0 ? row[indexes.visible] : "SI"
-    })).filter(event => event.date && event.title && event.visible);
+      category: indexes.category >= 0 ? row[indexes.category] : ""
+    })).filter(event => event.date && event.title);
   }
 
   function normalizeEvent(event) {
@@ -102,7 +102,7 @@
       theater: String(event.theater ?? "").trim(),
       link: String(event.link ?? "").trim(),
       price: String(event.price ?? "").trim(),
-      visible: ["SI", "SÌ"].includes(String(event.visible ?? "").trim().toLocaleUpperCase("it"))
+      category: String(event.category ?? "").trim() || "Da classificare"
     };
   }
 
@@ -142,10 +142,10 @@
         theater: value("Teatro"),
         link: value("Link"),
         price: value("Prezzo"),
-        visible: value("Visibile") || "SI"
+        category: value("Categoria")
       });
     });
-    return rows.filter(event => event.date && event.title && event.visible);
+    return rows.filter(event => event.date && event.title);
   }
 
   async function load() {
