@@ -102,7 +102,7 @@
       theater: String(event.theater ?? "").trim(),
       link: String(event.link ?? "").trim(),
       price: String(event.price ?? "").trim(),
-      visible: String(event.visible ?? "SI").trim().toLocaleUpperCase("it") !== "NO"
+      visible: ["SI", "SÌ"].includes(String(event.visible ?? "").trim().toLocaleUpperCase("it"))
     };
   }
 
