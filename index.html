@@ -295,8 +295,6 @@ footer {
 
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
 <script>
 
 const YEAR = 2026;
@@ -311,61 +309,47 @@ const today = new Date();
 let appointments = [];
 
 
-/* Normalizzazione date */
+/* Parsing CSV testuale con separatore ; e virgolette RFC 4180 */
 
-function dateKey(year, month, day) {
-    return `${year}-${String(month + 1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+function parseDelimited(text, delimiter = ";") {
+    const rows = [];
+    let row = [], field = "", quoted = false;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (quoted) {
+            if (ch === '"' && text[i + 1] === '"') {
+                field += '"';
+                i++;
+            } else if (ch === '"') {
+                quoted = false;
+            } else {
+                field += ch;
+            }
+        } else if (ch === '"') {
+            quoted = true;
+        } else if (ch === delimiter) {
+            row.push(field);
+            field = "";
+        } else if (ch === "\n" || ch === "\r") {
+            if (ch === "\r" && text[i + 1] === "\n") i++;
+            row.push(field);
+            if (row.some(value => value !== "")) rows.push(row);
+            row = [];
+            field = "";
+        } else {
+            field += ch;
+        }
+    }
+    row.push(field);
+    if (row.some(value => value !== "")) rows.push(row);
+    return rows;
 }
 
 function normalizeDate(value) {
-
-    if (value instanceof Date && !isNaN(value)) {
-        return dateKey(
-            value.getFullYear(),
-            value.getMonth(),
-            value.getDate()
-        );
-    }
-
-    if (typeof value === "number") {
-        const parsed = XLSX.SSF.parse_date_code(value);
-
-        if (parsed) {
-            return dateKey(
-                parsed.y,
-                parsed.m - 1,
-                parsed.d
-            );
-        }
-    }
-
     const input = String(value ?? "").trim();
-
-    let match = input.match(
-        /^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/
-    );
-
-    if (match) {
-        return dateKey(
-            Number(match[1]),
-            Number(match[2]) - 1,
-            Number(match[3])
-        );
-    }
-
-    match = input.match(
-        /^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/
-    );
-
-    if (match) {
-        return dateKey(
-            Number(match[3]),
-            Number(match[2]) - 1,
-            Number(match[1])
-        );
-    }
-
-    return "";
+    const match = input.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+    if (!match) return "";
+    return `${match[3]}-${String(match[2]).padStart(2,"0")}-${String(match[1]).padStart(2,"0")}`;
 }
 
 
@@ -477,83 +461,42 @@ function renderMonth(month) {
 }
 
 
-/* Caricamento automatico Excel */
+/* Caricamento automatico calendario TXT */
 
 async function loadAppointments() {
-
     try {
+        const response = await fetch("./spettacoli.txt", { cache: "no-store" });
+        if (!response.ok) throw new Error("File TXT non trovato");
 
-        const response = await fetch(
-            "./Spettacoli.xlsx",
-            { cache: "no-store" }
-        );
+        const content = (await response.text()).replace(/^\\uFEFF/, "");
+        const rows = parseDelimited(content);
+        if (rows.length < 2) throw new Error("Calendario TXT vuoto o non valido");
 
-        if (!response.ok) {
-            throw new Error("File Excel non trovato");
+        const headers = rows[0].map(value => value.trim());
+        const index = name => headers.findIndex(value => value.toLowerCase() === name.toLowerCase());
+        const dayIndex = index("Giorno");
+        const titleIndex = index("Titolo");
+        const visibleIndex = index("Visibile");
+
+        if (dayIndex < 0 || titleIndex < 0 || visibleIndex < 0) {
+            throw new Error("Intestazioni richieste mancanti nel TXT");
         }
 
-        const buffer = await response.arrayBuffer();
-
-        const workbook = XLSX.read(
-            buffer,
-            {
-                type: "array",
-                cellDates: true
-            }
+        appointments = rows.slice(1).map(row => ({
+            day: normalizeDate(row[dayIndex]),
+            title: String(row[titleIndex] ?? "").trim(),
+            visible: String(row[visibleIndex] ?? "").trim().toUpperCase()
+        })).filter(item =>
+            item.day &&
+            item.title &&
+            item.visible === "SI" &&
+            item.day.startsWith(String(YEAR) + "-") &&
+            ["11", "12"].includes(item.day.slice(5, 7))
         );
-
-        const sheet =
-            workbook.Sheets[workbook.SheetNames[0]];
-
-        const rows = XLSX.utils.sheet_to_json(
-            sheet,
-            { defval: "" }
-        );
-
-        appointments = rows.map(row => {
-
-            const keys = Object.keys(row);
-
-            const dayColumn = keys.find(
-                key => key.trim().toLowerCase() === "Giorno"
-            );
-
-            const titleColumn = keys.find(
-                key => key.trim().toLowerCase() === "Titolo"
-            );
-
-            return {
-
-                day: dayColumn
-                    ? normalizeDate(row[dayColumn])
-                    : "",
-
-                title: titleColumn
-                    ? String(row[titleColumn]).trim()
-                    : ""
-
-            };
-
-        }).filter(item => {
-
-            return (
-                item.day &&
-                item.title &&
-                item.day.startsWith("2026-") &&
-                ["11", "12"].includes(item.day.slice(5, 7))
-            );
-
-        });
 
         renderAll();
-
     } catch (error) {
-
-        console.error(
-            "Errore caricamento appuntamenti:",
-            error
-        );
-
+        console.error("Errore caricamento appuntamenti:", error);
     }
 }
 
