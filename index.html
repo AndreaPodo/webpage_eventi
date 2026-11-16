@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./events.js" defer></script>
+  <script src="./events.js"></script>
 </head>
 <body>
   <main class="page-shell">
@@ -65,14 +65,10 @@
   <div class="modal-backdrop" id="event-modal-backdrop" hidden>
     <section class="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
       <div class="modal-top">
-        <div><p class="modal-kicker">Dettagli appuntamento</p><h2 class="modal-title" id="modal-event-title"></h2></div>
+        <div><p class="modal-kicker" id="modal-kicker">Appuntamenti del giorno</p><h2 class="modal-title" id="modal-event-title"></h2></div>
         <button class="modal-close" id="modal-close" type="button" aria-label="Chiudi finestra">×</button>
       </div>
-      <dl class="modal-details">
-        <div><dt>Teatro / luogo</dt><dd id="modal-theater"></dd></div>
-        <div><dt>Costo</dt><dd id="modal-price"></dd></div>
-      </dl>
-      <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Vai alla pagina dell'evento <span>↗</span></a>
+      <div class="modal-event-list" id="modal-event-list"></div>
     </section>
   </div>
   <script>
@@ -91,23 +87,71 @@
     return [year, String(month + 1).padStart(2, "0"), String(day).padStart(2, "0")].join("-");
   }
 
-  function openEventModal(appointment) {
-    byId("modal-event-title").textContent = appointment.title || "Evento";
-    byId("modal-theater").textContent = appointment.theater || "Non indicato";
-    byId("modal-price").textContent = appointment.price || "Non disponibile";
+  function openEventsModal(items, heading, kicker = "Appuntamenti del giorno") {
+    byId("modal-kicker").textContent = kicker;
+    byId("modal-event-title").textContent = heading;
+    const list = byId("modal-event-list");
+    list.replaceChildren();
 
-    const link = byId("modal-link");
-    let safeUrl = false;
-    try {
-      const parsed = new URL(appointment.link);
-      safeUrl = parsed.protocol === "https:" || parsed.protocol === "http:";
-    } catch (_) {}
-    link.hidden = !safeUrl;
-    if (safeUrl) link.href = appointment.link;
-    else link.removeAttribute("href");
+    if (!items.length) {
+      const empty = document.createElement("p");
+      empty.className = "modal-empty";
+      empty.textContent = "Nessun evento previsto per questa giornata.";
+      list.appendChild(empty);
+    }
+
+    items.forEach(appointment => {
+      const card = document.createElement("article");
+      card.className = "modal-event-card";
+      const title = document.createElement("h3");
+      title.className = "modal-event-name";
+      title.textContent = appointment.title || "Evento";
+      card.appendChild(title);
+
+      const details = document.createElement("dl");
+      details.className = "modal-details";
+      [["Teatro / luogo", appointment.theater || "Non indicato"], ["Prezzo", appointment.price || "Non indicato"]].forEach(([label, value]) => {
+        const wrapper = document.createElement("div");
+        const term = document.createElement("dt");
+        term.textContent = label;
+        const description = document.createElement("dd");
+        description.textContent = value;
+        wrapper.append(term, description);
+        details.appendChild(wrapper);
+      });
+      card.appendChild(details);
+
+      let safeUrl = false;
+      try {
+        const parsed = new URL(appointment.link);
+        safeUrl = parsed.protocol === "https:" || parsed.protocol === "http:";
+      } catch (_) {}
+      if (safeUrl) {
+        const link = document.createElement("a");
+        link.className = "modal-link";
+        link.href = appointment.link;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Vai alla pagina dell'evento ↗";
+        card.appendChild(link);
+      }
+      list.appendChild(card);
+    });
 
     byId("event-modal-backdrop").hidden = false;
     byId("modal-close").focus();
+  }
+
+  function openEventModal(appointment) {
+    openEventsModal([appointment], appointment.title || "Evento", "Dettagli appuntamento");
+  }
+
+  function openDayModal(dayEvents, dateKeyValue) {
+    const [year, month, day] = dateKeyValue.split("-").map(Number);
+    const label = new Intl.DateTimeFormat("it-IT", {
+      weekday: "long", day: "numeric", month: "long", year: "numeric"
+    }).format(new Date(year, month - 1, day));
+    openEventsModal(dayEvents, label.charAt(0).toLocaleUpperCase("it") + label.slice(1));
   }
 
   function closeEventModal() {
@@ -155,6 +199,19 @@
       const dayEvents = appointments.filter(item => item.date === key);
       monthEventCount += dayEvents.length;
 
+      cell.classList.add("day-clickable");
+      cell.tabIndex = 0;
+      cell.setAttribute("role", "button");
+      cell.setAttribute("aria-label", "Mostra eventi del " + dayNumber + " " +
+        new Intl.DateTimeFormat("it-IT", { month: "long" }).format(new Date(YEAR, month, 1)));
+      cell.addEventListener("click", () => openDayModal(dayEvents, key));
+      cell.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openDayModal(dayEvents, key);
+        }
+      });
+
       if (dayEvents.length) {
         const list = document.createElement("div");
         list.className = "events";
@@ -164,7 +221,7 @@
           event.className = "event";
           event.textContent = appointment.title;
           event.title = "Mostra dettagli: " + appointment.title;
-          event.addEventListener("click", () => openEventModal(appointment));
+          event.addEventListener("click", clickEvent => { clickEvent.stopPropagation(); openEventModal(appointment); });
           list.appendChild(event);
         });
         cell.appendChild(list);
