@@ -1,219 +1,239 @@
 Giorno;Titolo;Teatro;Link;Prezzo;Categoria
-16-11-2026;I monologhi della vagina;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-17-11-2026;Osteria Giacobazzi;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-17-11-2026;Wish You Were Here;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-18-11-2026;La sera dei miracoli;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-19-11-2026;ADDUE;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-19-11-2026;CASA;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-19-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-19-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-19-11-2026;Monet. Una vita a colori;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-19-11-2026;Teatro Aperto;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-20-11-2026;Bestiario idrico;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-20-11-2026;Bolton;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-20-11-2026;BONONIA SOUND MACHINE;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-20-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-20-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-20-11-2026;Lo zar;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-21-11-2026;Bestiario idrico;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-21-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-21-11-2026;CIKECIAK;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-21-11-2026;Epstein Files - Tutto quello che il potere cerca di nascondere;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-21-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-21-11-2026;Lo zar;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-22-11-2026;Blex;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-22-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-22-11-2026;Cenerentola 301;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-22-11-2026;CIKECIAK;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-22-11-2026;Francesca Michielin | Live nei Teatri 2026;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-22-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-22-11-2026;Lo zar;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-23-11-2026;Coez | From The Rooftop - Live 2026;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-23-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-23-11-2026;La bisbetica domata;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-24-11-2026;Coez | From The Rooftop - Live 2026;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-24-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-24-11-2026;Legend the Show in Orchestra;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-24-11-2026;Michele Zarrillo | L’elefante e la farfalla;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-25-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-25-11-2026;Malika Ayane | A Teatro 2026;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-25-11-2026;Pesche dure;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-25-11-2026;ROSICLER RAMIREZ;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-26-11-2026;Bologna suona Buena Vista Social Club;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-26-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-26-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-26-11-2026;Non hanno un amico dubbio;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-26-11-2026;NOTRE DAME DE FORLÌ;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-27-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-27-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-27-11-2026;Morte accidentale di un anarchico;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-27-11-2026;SPETTINATI;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-28-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-28-11-2026;Il Cardinale Lambertini;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-28-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-28-11-2026;Le Palestriti | Falling into dance, with Isadora;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-28-11-2026;Morte accidentale di un anarchico;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-28-11-2026;SPETTINATI;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-28-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-28-11-2026;Un minuto;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-29-11-2026;Caro Lupo;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-29-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-29-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-29-11-2026;Le Palestriti | Falling into dance, with Isadora;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-29-11-2026;Morte accidentale di un anarchico;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-29-11-2026;Occhi aperti! Serata tra amici;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-29-11-2026;SPETTINATI;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-29-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-29-11-2026;Un minuto;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-30-11-2026;Da quei ragazzi;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-01-12-2026;La stanza;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-01-12-2026;Nata con la Guêpière;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-01-12-2026;Soweto Gospel Choir - Joy;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-02-12-2026;E Morte non avrà dominio - Ballad Opera;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-02-12-2026;Io Marte, tu Mercole R-Evolution;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-02-12-2026;La stanza;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-02-12-2026;Nata con la Guêpière;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-03-12-2026;Back to Hawkins;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-03-12-2026;E Morte non avrà dominio - Ballad Opera;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-03-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-03-12-2026;Maccio Capatonda | Spettacolo Teatrale;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-04-12-2026;Alla meta;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-04-12-2026;ALTERIA;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-04-12-2026;Fuori misura. Il Leopardi come non ve l’ha mai raccontato nessuno;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-04-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-04-12-2026;Strappo alla regola;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-05-12-2026;Alla meta;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-05-12-2026;Âme;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-05-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-05-12-2026;LA PARABOLA DISCENDENTE DI UN PADRE AMBIENTALISTA;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-05-12-2026;STORIA DI UN ARMADIO;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-05-12-2026;Strappo alla regola;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-06-12-2026;Âme;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-06-12-2026;BIANCANEVE;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-06-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-06-12-2026;STORIA DI UN ARMADIO;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-06-12-2026;Strappo alla regola;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-07-12-2026;Amedeo Minghi | Anniversari Tour;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-08-12-2026;Mamma... l'aereo!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-09-12-2026;NEMICI COME PRIMA;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-09-12-2026;Pablo Trincia | L’uomo sbagliato;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-09-12-2026;Sei personaggi in cerca d’autore;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-10-12-2026;Arisa | Live Tour;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-10-12-2026;GHEMON;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-10-12-2026;Sei personaggi in cerca d’autore;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-11-12-2026;Angius, Grazia;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-11-12-2026;Buongiorno, Ministro!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-11-12-2026;Cenerentola. L'arte, la scienza e la conoscenza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-11-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-11-12-2026;Madre per sempre;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-11-12-2026;MASSIMO BUBOLA & OF NEW TROLLS;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-12-12-2026;Buongiorno, Ministro!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-12-12-2026;Cenerentola. L'arte, la scienza e la conoscenza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-12-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-12-12-2026;Madre per sempre;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-12-12-2026;UN ELEFANTE SI DONDOLAVA…;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-12-12-2026;VENERDÌ 13;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-13-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-13-12-2026;Il cielo degli orsi;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-13-12-2026;La Bella Addormentata nel Bosco;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-13-12-2026;Madre per sempre;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-13-12-2026;UN ELEFANTE SI DONDOLAVA…;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-13-12-2026;VENERDÌ 13;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-14-12-2026;Alessandro Cattelan | Benvenuto nell’AI!;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-14-12-2026;L’Amante;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-14-12-2026;La Bella Addormentata nel Bosco;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-15-12-2026;Osteria Giacobazzi;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-16-12-2026;La bella addormentata;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-16-12-2026;Remembering Whitney & Tina;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-16-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-17-12-2026;Breaking Brecht – Sing’n’Song Cabaret;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-17-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-18-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-18-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-18-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-18-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-19-12-2026;A Christmas Carol | Il Musical;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-19-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-19-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-19-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-19-12-2026;Soluzioni nascoste;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-19-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-19-12-2026;THE FULL MONTY;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-20-12-2026;A Christmas Carol | Il Musical;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-20-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-20-12-2026;Ho un pezzettino in gola;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-20-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-20-12-2026;Soluzioni nascoste;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-20-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-20-12-2026;THE FULL MONTY;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-23-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-26-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-26-12-2026;Raffaella! | Omaggio alla Carrà;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-27-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-27-12-2026;Lo schiaccianoci 2026;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-28-12-2026;Bollicine;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-29-12-2026;Bollicine;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-29-12-2026;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-29-12-2026;Titizé. A Venetian Dream;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-30-12-2026;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-30-12-2026;Titizé. A Venetian Dream;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-31-12-2026;CAPODANNO CON DONDARINI & DALFIUME;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-31-12-2026;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-31-12-2026;Gran varietà di Capodanno;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-31-12-2026;Matthew Lee | From 20’s to 20’s;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-31-12-2026;Stenz;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-31-12-2026;Titizé. A Venetian Dream;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-01-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-02-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-03-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-03-01-2027;Dal Maso, Mancini;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-03-01-2027;Il Pipistrello | Operetta di Johann Strauss;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-05-01-2027;Bubbles Revolution;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-05-01-2027;LO SCHIACCIANOCI;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-05-01-2027;Una notte per Faber;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-05-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-06-01-2027;Bubbles Revolution;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-06-01-2027;CAPPUCCETTO ROSSO;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-06-01-2027;Il libro della giungla;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-06-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-07-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-08-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-08-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-08-01-2027;GIN GAME;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-08-01-2027;La Mandragola;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-09-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-09-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-09-01-2027;GIN GAME;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-09-01-2027;La Mandragola;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-09-01-2027;Tutta colpa del K-POP;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-09-01-2027;UN CAMION ROSSO DEI POMPIERI;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-10-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-10-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-10-01-2027;GIN GAME;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-10-01-2027;LA BELLA O LA BESTIA;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-10-01-2027;La Mandragola;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-10-01-2027;UN CAMION ROSSO DEI POMPIERI;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-10-01-2027;Weigle;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-11-01-2027;Il Badante;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-11-01-2027;Perfetta;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-12-01-2027;Il viale del tramonto;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-13-01-2027;Emozioni;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-13-01-2027;RICCARDO ROSSI E LEONARDO COLOMBATI;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-14-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-14-01-2027;Jaques Morelenbaum;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;Da classificare
-14-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-14-01-2027;TIZIANO LA BELLA;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-14-01-2027;Tu sei la foresta;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-14-01-2027;Una razza in estinzione;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-15-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-15-01-2027;Gli innamorati;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-15-01-2027;La moglie fantasma;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-15-01-2027;Michele Bravi | Commedia Musicale Tour;Teatro EuropAuditorium;https://cittadellamusica.comune.bologna.it/objects/teatro-europauditorium-2026-2027;;Da classificare
-15-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-15-01-2027;Ultimo round;Teatro Testoni Ragazzi;https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;Da classificare
-15-01-2027;VITALITY;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-16-01-2027;A NOI GLI OCCHI POR FAVOR;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;Da classificare
-16-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
-16-01-2027;Gli innamorati;Teatro Duse;https://cittadellamusica.comune.bologna.it/objects/teatro-duse-2026_2027;;Da classificare
-16-01-2027;La moglie fantasma;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-teatrale-2026-27/;;Da classificare
-16-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;Da classificare
+16-11-2026;I monologhi della vagina;Teatro Duse;https://teatroduse.it/spettacoli/lella-costa-i-monologhi-della-vagina-teatro-duse/;23;prosa
+17-11-2026;Osteria Giacobazzi;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-osteria-giacobazzi-17-novembre-2026/;;comicità
+17-11-2026;Wish You Were Here;Teatro Duse;https://teatroduse.it/spettacoli/concerto-tributo-pink-floyd-wish-you-were-here/;;concerto
+18-11-2026;La sera dei miracoli;Teatro Duse;https://teatroduse.it/spettacoli/la-sera-dei-miracoli/;;spettacolo dal vivo
+19-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/catalogo-nov2026;;danza
+19-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+19-11-2026;ADDUE;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/addue?catid=29:humour;20;comicità
+19-11-2026;Monet. Una vita a colori;Teatro Duse;https://teatroduse.it/spettacoli/marco-goldin-monet-una-vita-a-colori/;;spettacolo dal vivo
+19-11-2026;CASA;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+19-11-2026;Teatro Aperto;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+20-11-2026;Bolton;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+20-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/catalogo-nov2026;;danza
+20-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+20-11-2026;Bestiario idrico;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-marco-paolini-20-21-novembre-2026/;;prosa
+20-11-2026;BONONIA SOUND MACHINE;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/bononia-sound-machine?catid=27:musica;20;concerto
+20-11-2026;BOW (studio);Teatro delle Moline;https://www.culturabologna.it/lang/it/events/bow-studio;;danza
+20-11-2026;Lo zar;Teatro Duse;https://teatroduse.it/spettacoli/vladimir-putin-stefano-massini/;;prosa
+21-11-2026;A Beginning #16161D;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/a-beginning-16161d;;danza
+21-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/catalogo-nov2026;;danza
+21-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+21-11-2026;Bestiario idrico;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-marco-paolini-20-21-novembre-2026/;;prosa
+21-11-2026;Io me lo merito;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;spettacolo dal vivo
+21-11-2026;BOW (studio);Teatro delle Moline;https://www.culturabologna.it/lang/it/events/bow-studio;;danza
+21-11-2026;Lo zar;Teatro Duse;https://teatroduse.it/spettacoli/vladimir-putin-stefano-massini/;;prosa
+21-11-2026;CIKECIAK;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+22-11-2026;Blex;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+22-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/catalogo-nov2026;;danza
+22-11-2026;Fosca;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/fosca-22nov2026;;danza
+22-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+22-11-2026;Lo zar;Teatro Duse;https://teatroduse.it/spettacoli/vladimir-putin-stefano-massini/;;prosa
+22-11-2026;Francesca Michielin | Live nei Teatri 2026;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-francesca-michielin-22-novembre-2026/;;concerto
+22-11-2026;Cenerentola 301;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/objects/events/cenerentola-301-22nov2026;;teatro ragazzi
+22-11-2026;CIKECIAK;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+23-11-2026;Che Musica, Ragazzi! – Francesca Dego e Francesca Leonardi;Auditorium Manzoni;https://www.musicainsiemebologna.it/;;concerto
+23-11-2026;Francesca Dego e Francesca Leonardi;Auditorium Manzoni;https://www.musicainsiemebologna.it/;;concerto
+23-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+23-11-2026;La bisbetica domata;Teatro Duse;https://teatroduse.it/spettacoli/la-bisbetica-domata-teatro-duse/;;prosa
+23-11-2026;Coez | From The Rooftop - Live 2026;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-coez-23-24-novembre-2026/;;concerto
+24-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+24-11-2026;Legend the Show in Orchestra;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-legend-the-show-24-novembre-2026/;;comicità
+24-11-2026;Michele Zarrillo | L’elefante e la farfalla;Teatro Duse;https://teatroduse.it/spettacoli/michele-zarrillo-elefante-e-farfalla-bologna/;;concerto
+24-11-2026;Coez | From The Rooftop - Live 2026;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-coez-23-24-novembre-2026/;;concerto
+25-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+25-11-2026;Pesche dure;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-daniele-tinti-25-novembre-2026/;;comicità
+25-11-2026;ROSICLER RAMIREZ;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/rosiscel-ramirez?catid=30:extra;28;comicità
+25-11-2026;Malika Ayane | A Teatro 2026;Teatro Duse;https://teatroduse.it/spettacoli/malika-ayane-bologna-tour-teatrale/;;concerto
+26-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-berretto-a-sonagli-nov2026;;prosa
+26-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+26-11-2026;Non hanno un amico dubbio;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-luca-bizzarri-26-novembre-2026/;;comicità
+26-11-2026;NOTRE DAME DE FORLÌ;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/notre-dame-de-forli?catid=28:prosa;;prosa
+26-11-2026;Bologna suona Buena Vista Social Club;Teatro Duse;https://teatroduse.it/spettacoli/bologna-suona-buena-vista-social-club-teatro-duse/;;spettacolo dal vivo
+27-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-berretto-a-sonagli-nov2026;;prosa
+27-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+27-11-2026;SPETTINATI;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/spettinati?catid=28:prosa;;prosa
+27-11-2026;Morte accidentale di un anarchico;Teatro Duse;https://teatroduse.it/spettacoli/morte-accidentale-anarchico-lodo-guenzi/;;prosa
+28-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-berretto-a-sonagli-nov2026;;prosa
+28-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+28-11-2026;Le Palestriti | Falling into dance, with Isadora;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/le-palestriti-i-falling-into-dance-with-isadora;;danza
+28-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/storie-e-segreti-dell-arena-del-sole;;visita guidata
+28-11-2026;Il Cardinale Lambertini;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-il-cardinale-lambertini-28-novembre-2026/;;prosa
+28-11-2026;SPETTINATI;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/spettinati?catid=28:prosa;;prosa
+28-11-2026;you, elsewhere;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/you-elsewhere;;danza
+28-11-2026;Morte accidentale di un anarchico;Teatro Duse;https://teatroduse.it/spettacoli/morte-accidentale-anarchico-lodo-guenzi/;;prosa
+28-11-2026;Notte Morricone;Teatro EuropAuditorium;https://www.tcbo.it/evento/danza/notte-morricone-2026/;;danza
+28-11-2026;Un minuto;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+29-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-berretto-a-sonagli-nov2026;;prosa
+29-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
+29-11-2026;Le Palestriti | Falling into dance, with Isadora;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/le-palestriti-i-falling-into-dance-with-isadora;;danza
+29-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/storie-e-segreti-dell-arena-del-sole;;visita guidata
+29-11-2026;Occhi aperti! Serata tra amici;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-maurizio-nichetti29-novembre-2026/;;comicità
+29-11-2026;SPETTINATI;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/spettinati?catid=28:prosa;;prosa
+29-11-2026;you, elsewhere;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/you-elsewhere;;danza
+29-11-2026;Morte accidentale di un anarchico;Teatro Duse;https://teatroduse.it/spettacoli/morte-accidentale-anarchico-lodo-guenzi/;;prosa
+29-11-2026;Notte Morricone;Teatro EuropAuditorium;https://www.tcbo.it/evento/danza/notte-morricone-2026/;;danza
+29-11-2026;Caro Lupo;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+29-11-2026;Un minuto;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+30-11-2026;Da quei ragazzi;Teatro Duse;https://teatroduse.it/spettacoli/da-quei-ragazzi-lorenzo-traversari/;;prosa
+01-12-2026;Nata con la Guêpière;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-valentina-persia-1-2-dicembre-2026/;;spettacolo dal vivo
+01-12-2026;La stanza;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/la-stanza-dic2026;;prosa
+01-12-2026;Soweto Gospel Choir - Joy;Teatro Duse;https://teatroduse.it/spettacoli/soweto-gospel-choir-joy-teatro-duse/;;concerto
+02-12-2026;Nata con la Guêpière;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-valentina-persia-1-2-dicembre-2026/;;spettacolo dal vivo
+02-12-2026;Io Marte, tu Mercole R-Evolution;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/gianluca-scintilla-fubelli-e-federica-camba?catid=29:humour;;spettacolo dal vivo
+02-12-2026;La stanza;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/la-stanza-dic2026;;prosa
+02-12-2026;Vinicio Capossela, Capovilla;Teatro Duse;https://teatroduse.it/spettacoli/vinicio-capossela-e-morte-non-avra-dominio/;;concerto
+03-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-giorno-in-cui-mio-padre-mi-ha-insegnato-ad-andare-in-bicicletta;;prosa
+03-12-2026;Back to Hawkins;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-back-to-hawkins-3-dicembre-2026/;;spettacolo dal vivo
+03-12-2026;BAD RAGAZ;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/bad-ragaz?catid=27:musica;;concerto
+03-12-2026;Vinicio Capossela, Capovilla;Teatro Duse;https://teatroduse.it/spettacoli/vinicio-capossela-e-morte-non-avra-dominio/;;concerto
+03-12-2026;Maccio Capatonda | Spettacolo Teatrale;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-maccio-capaonda-3-dicembre-2026/;;comicità
+04-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-giorno-in-cui-mio-padre-mi-ha-insegnato-ad-andare-in-bicicletta;;prosa
+04-12-2026;ALTERIA;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/alteria?catid=27:musica;;concerto
+04-12-2026;Alla meta;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/alla-meta;;prosa
+04-12-2026;Strappo alla regola;Teatro Duse;https://teatroduse.it/spettacoli/strappo-alla-regola-edoardo-erba-maria-amelia-monti/;;prosa
+04-12-2026;Fuori misura. Il Leopardi come non ve l’ha mai raccontato nessuno;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+05-12-2026;Il flauto magico – Short Edition;Auditorium Manzoni;https://www.tcbo.it/evento/accademia/il-flauto-magico-short-edition-2026/;;opera
+05-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-giorno-in-cui-mio-padre-mi-ha-insegnato-ad-andare-in-bicicletta;;prosa
+05-12-2026;Âme;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-les-farfadais-5-6-dicembre-2026/;;danza
+05-12-2026;LA PARABOLA DISCENDENTE DI UN PADRE AMBIENTALISTA;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/la-parabola-discendente-di-un-padre-ambientalista?catid=29:humour;;comicità
+05-12-2026;Alla meta;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/alla-meta;;prosa
+05-12-2026;Strappo alla regola;Teatro Duse;https://teatroduse.it/spettacoli/strappo-alla-regola-edoardo-erba-maria-amelia-monti/;;prosa
+05-12-2026;STORIA DI UN ARMADIO;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+06-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-giorno-in-cui-mio-padre-mi-ha-insegnato-ad-andare-in-bicicletta;;prosa
+06-12-2026;Âme;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-les-farfadais-5-6-dicembre-2026/;;danza
+06-12-2026;Strappo alla regola;Teatro Duse;https://teatroduse.it/spettacoli/strappo-alla-regola-edoardo-erba-maria-amelia-monti/;;prosa
+06-12-2026;BIANCANEVE;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+06-12-2026;STORIA DI UN ARMADIO;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+07-12-2026;Amedeo Minghi | Anniversari Tour;Teatro Duse;https://teatroduse.it/spettacoli/amedeo-minghi-anniversari-teatro-duse/;;concerto
+08-12-2026;Mamma... l'aereo!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-mamma-laereo-8-dicembre-2026/;;comicità
+09-12-2026;NEMICI COME PRIMA;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/nemici-come-prima?catid=28:prosa;;prosa
+09-12-2026;Sei personaggi in cerca d’autore;Teatro Duse;https://teatroduse.it/spettacoli/sei-personaggi-in-cerca-d-autore/;;prosa
+09-12-2026;Pablo Trincia | L’uomo sbagliato;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-pablo-trincia-9-dicembre-2026/;;spettacolo dal vivo
+10-12-2026;GHEMON;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli/stagione-2026-2027;;spettacolo dal vivo
+10-12-2026;Sei personaggi in cerca d’autore;Teatro Duse;https://teatroduse.it/spettacoli/sei-personaggi-in-cerca-d-autore/;;prosa
+10-12-2026;Arisa | Live Tour;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-arisa-10-dicembre-2026/;;concerto
+11-12-2026;Angius, Grazia;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+11-12-2026;Cenerentola. L'arte, la scienza e la conoscenza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/cenerentola-l-arte-la-scienza-e-la-conoscenza;;prosa
+11-12-2026;Buongiorno, Ministro!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-buongiorno-ministro-11-12-dicembre-2026/;;prosa
+11-12-2026;MASSIMO BUBOLA & OF NEW TROLLS;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/massimo-bubola-of-new-trolls?catid=27:musica;;concerto
+11-12-2026;Madre per sempre;Teatro Duse;https://teatroduse.it/spettacoli/madre-per-sempre-marta-barcelo/;;prosa
+11-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;;comicità
+12-12-2026;Cenerentola. L'arte, la scienza e la conoscenza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/cenerentola-l-arte-la-scienza-e-la-conoscenza;;prosa
+12-12-2026;Buongiorno, Ministro!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-buongiorno-ministro-11-12-dicembre-2026/;;prosa
+12-12-2026;VENERDÌ 13;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/venerdi-13-martina-colombari?catid=28:prosa;;prosa
+12-12-2026;Madre per sempre;Teatro Duse;https://teatroduse.it/spettacoli/madre-per-sempre-marta-barcelo/;;prosa
+12-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;;comicità
+12-12-2026;UN ELEFANTE SI DONDOLAVA…;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+13-12-2026;Sauer;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/sauer-2026/;;concerto
+13-12-2026;La Bella Addormentata nel Bosco;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-baby-bofe-13-14-dicembre-2026/;;danza
+13-12-2026;VENERDÌ 13;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/venerdi-13-martina-colombari?catid=28:prosa;;prosa
+13-12-2026;Madre per sempre;Teatro Duse;https://teatroduse.it/spettacoli/madre-per-sempre-marta-barcelo/;;prosa
+13-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;;comicità
+13-12-2026;Il cielo degli orsi;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+13-12-2026;UN ELEFANTE SI DONDOLAVA…;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+14-12-2026;Cappella Neapolitana, Ian Bostridge, Antonio Florio;Auditorium Manzoni;https://www.musicainsiemebologna.it/;;concerto
+14-12-2026;La Bella Addormentata nel Bosco;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-baby-bofe-13-14-dicembre-2026/;;danza
+14-12-2026;L’Amante;Teatro Duse;https://teatroduse.it/spettacoli/lamante-pinter-teatro-duse/;;prosa
+14-12-2026;Alessandro Cattelan | Benvenuto nell’AI!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-alessandro-cattelan-14-dicembre-2026/;;comicità
+15-12-2026;Osteria Giacobazzi;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-osteria-giacobazzi-17-novembre-2026/;;comicità
+16-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
+16-12-2026;Remembering Whitney & Tina;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-harlem-gospel-choir-16-dicembre-2026/;;concerto
+16-12-2026;La bella addormentata;Teatro Duse;https://teatroduse.it/spettacoli/la-bella-addormentata-il-balletto-del-sud/;;danza
+17-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
+17-12-2026;Breaking Brecht – Sing’n’Song Cabaret;Teatro Duse;https://teatroduse.it/spettacoli/breaking-brecht-veronica-pivetti-teatro-duse/;;spettacolo dal vivo
+18-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/faust-dic2026;;prosa
+18-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
+18-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
+18-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;;musical
+19-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/faust-dic2026;;prosa
+19-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
+19-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
+19-12-2026;THE FULL MONTY;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27:musica;;musical
+19-12-2026;A Christmas Carol | Il Musical;Teatro Duse;https://teatroduse.it/spettacoli/a-christmas-carol/;;musical
+19-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;;musical
+19-12-2026;Soluzioni nascoste;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+20-12-2026;Concerto di Natale;Auditorium Manzoni;https://www.tcbo.it/stagione-presente/;;concerto
+20-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
+20-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
+20-12-2026;THE FULL MONTY;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27:musica;;musical
+20-12-2026;A Christmas Carol | Il Musical;Teatro Duse;https://teatroduse.it/spettacoli/a-christmas-carol/;;musical
+20-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;;musical
+20-12-2026;Ho un pezzettino in gola;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+20-12-2026;Soluzioni nascoste;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+23-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-cenerentola-on-ice-23-26-e-27-dicembre-2026/;;danza
+26-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-cenerentola-on-ice-23-26-e-27-dicembre-2026/;;danza
+26-12-2026;Raffaella! | Omaggio alla Carrà;Teatro Duse;https://teatroduse.it/spettacoli/raffaella-omaggio-carra-teatro-duse/;;concerto
+27-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-cenerentola-on-ice-23-26-e-27-dicembre-2026/;;danza
+27-12-2026;Lo schiaccianoci 2026;Teatro Duse;https://teatroduse.it/spettacoli/lo-schiaccianoci-teatro-duse-2026/;;danza
+28-12-2026;Bollicine;Teatro Duse;https://teatroduse.it/spettacoli/bollicine-concerto-fine-anno-orchestra-senzaspine/;;concerto
+29-12-2026;Titizé. A Venetian Dream;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/titize-a-venetian-dream;;prosa
+29-12-2026;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
+29-12-2026;Bollicine;Teatro Duse;https://teatroduse.it/spettacoli/bollicine-concerto-fine-anno-orchestra-senzaspine/;;concerto
+30-12-2026;Titizé. A Venetian Dream;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/titize-a-venetian-dream;;prosa
+30-12-2026;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
+31-12-2026;Stenz;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+31-12-2026;Titizé. A Venetian Dream;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/titize-a-venetian-dream;;prosa
+31-12-2026;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
+31-12-2026;CAPODANNO CON DONDARINI & DALFIUME;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/capodanno-con-dondarini-dalfiume?catid=29:humour;;comicità
+31-12-2026;Matthew Lee | From 20’s to 20’s;Teatro Duse;https://teatroduse.it/spettacoli/matthew-lee-bologna-capodanno-teatro-duse/;;concerto
+31-12-2026;Gran varietà di Capodanno;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-gran-varieta-di-capodanno-31-dicembre-2026/;;spettacolo dal vivo
+01-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
+02-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
+03-01-2027;Dal Maso, Mancini;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+03-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
+03-01-2027;Il Pipistrello | Operetta di Johann Strauss;Teatro Duse;https://teatroduse.it/spettacoli/il-pipistrello-teatro-duse-bologna/;;operetta
+05-01-2027;Bubbles Revolution;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-bubbles-revolution-5-6-gennaio-2027/;;danza
+05-01-2027;LO SCHIACCIANOCI;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/lo-schiaccianoci?catid=30:extra;;danza
+05-01-2027;Una notte per Faber;Teatro Duse;https://teatroduse.it/spettacoli/una-notte-per-faber-bologna/;;concerto
+05-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-winx-club-5-6-gennaio-2027/;;musical
+06-01-2027;Bubbles Revolution;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-bubbles-revolution-5-6-gennaio-2027/;;danza
+06-01-2027;Il libro della giungla;Teatro Duse;https://teatroduse.it/spettacoli/libro-della-giungla-fantateatro-teatro-duse/;;spettacolo dal vivo
+06-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-winx-club-5-6-gennaio-2027/;;musical
+06-01-2027;CAPPUCCETTO ROSSO;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+07-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
+08-01-2027;Beatrice Rana;Auditorium Manzoni;https://www.musicainsiemebologna.it/;;concerto
+08-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
+08-01-2027;GIN GAME;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/gin-game?catid=28:prosa;;prosa
+08-01-2027;La Mandragola;Teatro Duse;https://teatroduse.it/spettacoli/la-mandragola-machiavelli-guglielmo-ferro/;;prosa
+08-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;;musical
+09-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
+09-01-2027;Tutta colpa del K-POP;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-seoul-mafia-9-gennaio-2027/;;danza
+09-01-2027;GIN GAME;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/gin-game?catid=28:prosa;;prosa
+09-01-2027;La Mandragola;Teatro Duse;https://teatroduse.it/spettacoli/la-mandragola-machiavelli-guglielmo-ferro/;;prosa
+09-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;;musical
+09-01-2027;UN CAMION ROSSO DEI POMPIERI;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+10-01-2027;Weigle;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+10-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
+10-01-2027;GIN GAME;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/gin-game?catid=28:prosa;;prosa
+10-01-2027;La Mandragola;Teatro Duse;https://teatroduse.it/spettacoli/la-mandragola-machiavelli-guglielmo-ferro/;;prosa
+10-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;;musical
+10-01-2027;LA BELLA O LA BESTIA;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+10-01-2027;UN CAMION ROSSO DEI POMPIERI;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+11-01-2027;Perfetta;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-geppi-cucciari-11-gennaio-2027/;;comicità
+11-01-2027;Il Badante;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-badante-11-gennaio-2027/;;comicità
+12-01-2027;Il viale del tramonto;Teatro Duse;https://teatroduse.it/spettacoli/il-viale-del-tramonto-muta-imago-teatro-duse/;;prosa
+12-01-2027;Din Don Down;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27/;;comicità
+13-01-2027;RICCARDO ROSSI E LEONARDO COLOMBATI;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/riccardo-rossi-e-leonardo-colombati?catid=29:humour;;comicità
+13-01-2027;Emozioni;Teatro Duse;https://teatroduse.it/spettacoli/emozioni-gianmarco-carroccia-teatro-duse/;;concerto
+13-01-2027;Din Don Down;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27/;;comicità
+14-01-2027;Jaques Morelenbaum;Auditorium Manzoni;https://www.tcbo.it/stagione-futura/;;concerto
+14-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/di-madre-in-figlia;;prosa
+14-01-2027;Tu sei la foresta;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-selene-calloni-williams-14-giugno-2027/;;spettacolo dal vivo
+14-01-2027;In buona fede;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/tiziano-la-bella?catid=29:humour;;spettacolo dal vivo
+14-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/qui14-17gen2027;;prosa
+14-01-2027;Una razza in estinzione;Teatro Duse;https://teatroduse.it/spettacoli/tributo-giorgio-gaber/;;spettacolo dal vivo
+14-01-2027;Din Don Down;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27/;;comicità
+15-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/di-madre-in-figlia;;prosa
+15-01-2027;La moglie fantasma;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-la-moglie-fantasma-15-16-gennaio-2027/;;prosa
+15-01-2027;Vitality;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/gabriele-cirilli?catid=29:humour;;comicità
+15-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/qui14-17gen2027;;prosa
+15-01-2027;Gli innamorati;Teatro Duse;https://teatroduse.it/spettacoli/gli-innamorati-goldoni-roberto-valerio/;;prosa
+15-01-2027;Michele Bravi | Commedia Musicale Tour;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-michele-bravi-15-gennaio-2027/;;concerto
+15-01-2027;Ultimo round;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
+16-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/di-madre-in-figlia;;prosa
+16-01-2027;La moglie fantasma;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-la-moglie-fantasma-15-16-gennaio-2027/;;prosa
+16-01-2027;A NOI GLI OCCHI POR FAVOR;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/francesca-reggiani-e-chiara-becchimanzi?catid=29:humour;;comicità
+16-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/qui14-17gen2027;;prosa
+16-01-2027;Gli innamorati;Teatro Duse;https://teatroduse.it/spettacoli/gli-innamorati-goldoni-roberto-valerio/;;prosa
+16-01-2027;TIKETAK Piccololorso ha una sorellina;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;teatro ragazzi
