@@ -4,372 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090d18">
-  <meta name="description" content="Calendario degli eventi e degli spettacoli a Bologna.">
-  <title>Eventi | Calendario 2026</title>
+  <meta name="description" content="Calendario di spettacoli, concerti ed eventi a Bologna e dintorni.">
+  <title>Agenda | Bologna e dintorni</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./events.js"></script>
+  <script defer src="./events.js"></script>
+  <script defer src="./app.js"></script>
 </head>
 <body>
   <main class="page-shell">
     <header class="hero">
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-dot"></span> La tua agenda culturale</p>
-        <h1>Eventi<span class="title-period">.</span></h1>
-        <p class="subtitle">Tutti gli appuntamenti, in un unico calendario.</p>
+        <h1>Agenda<span class="title-period">.</span></h1>
+        <p class="subtitle">Spettacoli, musica e cose da fare a Bologna e dintorni.</p>
       </div>
       <div class="hero-meta">
-        <span class="meta-label">Stagione</span>
+        <span class="meta-label">Edizione</span>
         <strong>2026 <span>—</span> 27</strong>
-        <span class="meta-caption">Bologna e dintorni</span>
+        <span class="meta-caption">Bologna · Modena · Ferrara · Imola</span>
       </div>
     </header>
 
-    <section class="calendar-section" aria-label="Calendario eventi">
+    <nav class="section-nav" aria-label="Sezioni agenda">
+      <button class="nav-tab is-active" type="button" data-section="spettacoli" aria-selected="true"><span class="tab-number">01</span>Spettacoli</button>
+      <button class="nav-tab" type="button" data-section="concerti" aria-selected="false"><span class="tab-number">02</span>Concerti</button>
+      <button class="nav-tab" type="button" data-section="eventi" aria-selected="false"><span class="tab-number">03</span>Eventi</button>
+    </nav>
+
+    <section class="calendar-section" aria-live="polite">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">Programmazione</p>
-          <h2>Prossimi appuntamenti</h2>
+          <p class="section-kicker" id="section-kicker">Teatro e spettacolo dal vivo</p>
+          <h2 id="section-title">Prossimi appuntamenti</h2>
+          <p class="section-description" id="section-description"></p>
         </div>
-        <span class="live-indicator"><span></span> Calendario aggiornato</span>
+        <div class="section-meta">
+          <span class="live-indicator"><span></span><span id="event-count">Caricamento</span></span>
+          <span class="updated-at" id="updated-at">Aggiornamento dati: —</span>
+        </div>
       </div>
 
-      <div class="months" id="months">
-        <section class="month-card" aria-labelledby="month-november">
-          <header class="month-header">
-            <div><span class="month-index">01 / 02</span><h3 id="month-november">Novembre <span>2026</span></h3></div>
-            <span class="month-count" id="count-11">— eventi</span>
-          </header>
-          <div class="calendar" id="calendar-11" aria-label="Novembre 2026"></div>
-        </section>
-
-        <section class="month-card" aria-labelledby="month-december">
-          <header class="month-header">
-            <div><span class="month-index">02 / 02</span><h3 id="month-december">Dicembre <span>2026</span></h3></div>
-            <span class="month-count" id="count-12">— eventi</span>
-          </header>
-          <div class="calendar" id="calendar-12" aria-label="Dicembre 2026"></div>
-        </section>
-      </div>
+      <div class="months" id="months"></div>
 
       <section class="mobile-day-view" id="mobile-day-view" aria-label="Agenda giornaliera">
         <div class="mobile-day-navigation">
           <button class="day-nav-button" id="previous-day" type="button" aria-label="Giorno precedente">‹</button>
           <div class="mobile-day-heading">
             <p class="mobile-day-kicker" id="mobile-day-kicker">Agenda giornaliera</p>
-            <h3 id="mobile-day-title" aria-live="polite">Caricamento…</h3>
+            <h3 id="mobile-day-title">Caricamento…</h3>
             <span class="mobile-day-count" id="mobile-day-count"></span>
           </div>
           <button class="day-nav-button" id="next-day" type="button" aria-label="Giorno successivo">›</button>
         </div>
-        <div class="mobile-day-events" id="mobile-day-events" aria-live="polite"></div>
+        <div class="mobile-day-events" id="mobile-day-events"></div>
       </section>
-
-      <p class="load-status" id="load-status" role="status" aria-live="polite">Caricamento appuntamenti…</p>
+      <p class="load-status" id="load-status" role="status">Caricamento appuntamenti…</p>
     </section>
 
     <footer class="site-footer">
-      <span>EVENTI <span class="footer-mark">/</span> BOLOGNA</span>
-      <span>Una selezione di appuntamenti da non perdere.</span>
+      <span>AGENDA <span class="footer-mark">/</span> EMILIA</span>
+      <span>Controlla sempre la pagina ufficiale prima di partire o acquistare.</span>
     </footer>
   </main>
 
   <div class="modal-backdrop" id="event-modal-backdrop" hidden>
     <section class="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
       <div class="modal-top">
-        <div><p class="modal-kicker" id="modal-kicker">Appuntamenti del giorno</p><h2 class="modal-title" id="modal-event-title"></h2></div>
-        <button class="modal-close" id="modal-close" type="button" aria-label="Chiudi finestra">×</button>
+        <div><p class="modal-kicker" id="modal-kicker">Dettagli appuntamento</p><h2 class="modal-title" id="modal-event-title"></h2></div>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Chiudi">×</button>
       </div>
       <div class="modal-event-list" id="modal-event-list"></div>
     </section>
   </div>
-  <script>
-(function () {
-  "use strict";
-
-  const YEAR = 2026;
-  const MONTHS = [10, 11];
-  const WEEKDAYS = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
-  const today = new Date();
-  const mobileMinDate = new Date(YEAR, 10, 1);
-  const mobileMaxDate = new Date(YEAR, 11, 31);
-  const mobileSelectedDate = new Date(Math.min(
-    Math.max(new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime(), mobileMinDate.getTime()),
-    mobileMaxDate.getTime()
-  ));
-  let appointments = [];
-
-  const byId = id => document.getElementById(id);
-
-  function dateKey(year, month, day) {
-    return [year, String(month + 1).padStart(2, "0"), String(day).padStart(2, "0")].join("-");
-  }
-
-  function openEventsModal(items, heading, kicker = "Appuntamenti del giorno") {
-    byId("modal-kicker").textContent = kicker;
-    byId("modal-event-title").textContent = heading;
-    const list = byId("modal-event-list");
-    list.replaceChildren();
-
-    if (!items.length) {
-      const empty = document.createElement("p");
-      empty.className = "modal-empty";
-      empty.textContent = "Nessun evento previsto per questa giornata.";
-      list.appendChild(empty);
-    }
-
-    items.forEach(appointment => {
-      const card = document.createElement("article");
-      card.className = "modal-event-card";
-      const title = document.createElement("h3");
-      title.className = "modal-event-name";
-      title.textContent = appointment.title || "Evento";
-      card.appendChild(title);
-
-      const details = document.createElement("dl");
-      details.className = "modal-details";
-      [["Categoria", appointment.category || "Da classificare"], ["Teatro / luogo", appointment.theater || "Non indicato"], ["Prezzo", appointment.price || "Non indicato"]].forEach(([label, value]) => {
-        const wrapper = document.createElement("div");
-        const term = document.createElement("dt");
-        term.textContent = label;
-        const description = document.createElement("dd");
-        description.textContent = value;
-        wrapper.append(term, description);
-        details.appendChild(wrapper);
-      });
-      card.appendChild(details);
-
-      let safeUrl = false;
-      try {
-        const parsed = new URL(appointment.link);
-        safeUrl = parsed.protocol === "https:" || parsed.protocol === "http:";
-      } catch (_) {}
-      if (safeUrl) {
-        const link = document.createElement("a");
-        link.className = "modal-link";
-        link.href = appointment.link;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.textContent = "Vai alla pagina dell'evento ↗";
-        card.appendChild(link);
-      }
-      list.appendChild(card);
-    });
-
-    byId("event-modal-backdrop").hidden = false;
-    byId("modal-close").focus();
-  }
-
-  function openEventModal(appointment) {
-    openEventsModal([appointment], appointment.title || "Evento", "Dettagli appuntamento");
-  }
-
-  function openDayModal(dayEvents, dateKeyValue) {
-    const [year, month, day] = dateKeyValue.split("-").map(Number);
-    const label = new Intl.DateTimeFormat("it-IT", {
-      weekday: "long", day: "numeric", month: "long", year: "numeric"
-    }).format(new Date(year, month - 1, day));
-    openEventsModal(dayEvents, label.charAt(0).toLocaleUpperCase("it") + label.slice(1));
-  }
-
-  function closeEventModal() {
-    byId("event-modal-backdrop").hidden = true;
-  }
-
-  function renderMonth(month) {
-    const container = byId("calendar-" + (month + 1));
-    container.replaceChildren();
-
-    WEEKDAYS.forEach((label, index) => {
-      const weekday = document.createElement("div");
-      weekday.className = "weekday" + (index > 4 ? " weekend-heading" : "");
-      weekday.textContent = label;
-      container.appendChild(weekday);
-    });
-
-    const firstOffset = (new Date(YEAR, month, 1).getDay() + 6) % 7;
-    const daysInMonth = new Date(YEAR, month + 1, 0).getDate();
-    const totalCells = Math.ceil((firstOffset + daysInMonth) / 7) * 7;
-    let monthEventCount = 0;
-
-    for (let index = 0; index < totalCells; index++) {
-      const dayNumber = index - firstOffset + 1;
-      const cell = document.createElement("div");
-      cell.className = "day";
-
-      if (dayNumber < 1 || dayNumber > daysInMonth) {
-        cell.classList.add("empty");
-        container.appendChild(cell);
-        continue;
-      }
-
-      if (index % 7 > 4) cell.classList.add("weekend");
-      if (today.getFullYear() === YEAR && today.getMonth() === month && today.getDate() === dayNumber) {
-        cell.classList.add("today");
-      }
-
-      const number = document.createElement("span");
-      number.className = "day-number";
-      number.textContent = dayNumber;
-      cell.appendChild(number);
-
-      const key = dateKey(YEAR, month, dayNumber);
-      const dayEvents = appointments.filter(item => item.date === key);
-      monthEventCount += dayEvents.length;
-
-      cell.classList.add("day-clickable");
-      cell.tabIndex = 0;
-      cell.setAttribute("role", "button");
-      cell.setAttribute("aria-label", "Mostra eventi del " + dayNumber + " " +
-        new Intl.DateTimeFormat("it-IT", { month: "long" }).format(new Date(YEAR, month, 1)));
-      cell.addEventListener("click", () => openDayModal(dayEvents, key));
-      cell.addEventListener("keydown", event => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          openDayModal(dayEvents, key);
-        }
-      });
-
-      if (dayEvents.length) {
-        const list = document.createElement("div");
-        list.className = "events";
-        dayEvents.forEach(appointment => {
-          const event = document.createElement("button");
-          event.type = "button";
-          event.className = "event";
-          const eventName = document.createElement("span");
-          eventName.className = "event-name";
-          eventName.textContent = appointment.title;
-          const eventCategory = document.createElement("span");
-          eventCategory.className = "event-category";
-          eventCategory.textContent = appointment.category || "Da classificare";
-          event.append(eventName, eventCategory);
-          event.title = "Categoria: " + (appointment.category || "Da classificare") + " — Mostra dettagli: " + appointment.title;
-          event.addEventListener("click", clickEvent => { clickEvent.stopPropagation(); openEventModal(appointment); });
-          list.appendChild(event);
-        });
-        cell.appendChild(list);
-      }
-      container.appendChild(cell);
-    }
-
-    byId("count-" + (month + 1)).textContent = monthEventCount + (monthEventCount === 1 ? " evento" : " eventi");
-  }
-
-  function renderAll() {
-    MONTHS.forEach(renderMonth);
-  }
-
-  function renderMobileDay() {
-    const year = mobileSelectedDate.getFullYear();
-    const month = mobileSelectedDate.getMonth();
-    const day = mobileSelectedDate.getDate();
-    const key = dateKey(year, month, day);
-    const dayEvents = appointments.filter(item => item.date === key);
-    const formattedDate = new Intl.DateTimeFormat("it-IT", {
-      weekday: "long", day: "numeric", month: "long", year: "numeric"
-    }).format(mobileSelectedDate);
-    const isToday = today.getFullYear() === year &&
-      today.getMonth() === month && today.getDate() === day;
-
-    byId("mobile-day-title").textContent =
-      formattedDate.charAt(0).toLocaleUpperCase("it") + formattedDate.slice(1);
-    byId("mobile-day-kicker").textContent = isToday ? "Oggi" : "Agenda giornaliera";
-    byId("mobile-day-count").textContent =
-      dayEvents.length + (dayEvents.length === 1 ? " appuntamento" : " appuntamenti");
-
-    const list = byId("mobile-day-events");
-    list.replaceChildren();
-
-    if (!dayEvents.length) {
-      const empty = document.createElement("p");
-      empty.className = "mobile-day-empty";
-      empty.textContent = "Nessun appuntamento in programma per questa giornata.";
-      list.appendChild(empty);
-    }
-
-    dayEvents.forEach(appointment => {
-      const card = document.createElement("article");
-      card.className = "mobile-event-card";
-
-      const title = document.createElement("h4");
-      title.className = "mobile-event-title";
-      title.textContent = appointment.title || "Evento";
-
-      const category = document.createElement("span");
-      category.className = "event-category";
-      category.textContent = appointment.category || "Da classificare";
-
-      const venue = document.createElement("p");
-      venue.className = "mobile-event-venue";
-      venue.textContent = appointment.theater || "Luogo non indicato";
-
-      const footer = document.createElement("div");
-      footer.className = "mobile-event-footer";
-
-      const price = document.createElement("span");
-      price.className = "mobile-event-price";
-      price.textContent = appointment.price || "Prezzo non indicato";
-
-      const details = document.createElement("button");
-      details.className = "mobile-event-details";
-      details.type = "button";
-      details.textContent = "Dettagli";
-      details.addEventListener("click", () => openEventModal(appointment));
-
-      footer.append(price, details);
-      card.append(title, category, venue, footer);
-      list.appendChild(card);
-    });
-
-    byId("previous-day").disabled = mobileSelectedDate.getTime() <= mobileMinDate.getTime();
-    byId("next-day").disabled = mobileSelectedDate.getTime() >= mobileMaxDate.getTime();
-  }
-
-  function moveMobileDay(offset) {
-    mobileSelectedDate.setDate(mobileSelectedDate.getDate() + offset);
-    renderMobileDay();
-  }
-
-  function initModal() {
-    byId("previous-day").addEventListener("click", () => moveMobileDay(-1));
-    byId("next-day").addEventListener("click", () => moveMobileDay(1));
-    byId("modal-close").addEventListener("click", closeEventModal);
-    byId("event-modal-backdrop").addEventListener("click", event => {
-      if (event.target.id === "event-modal-backdrop") closeEventModal();
-    });
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && !byId("event-modal-backdrop").hidden) closeEventModal();
-    });
-  }
-
-  async function init() {
-    initModal();
-    renderAll();
-    renderMobileDay();
-    try {
-      appointments = (await window.EventData.load()).filter(event =>
-        event.date.startsWith(YEAR + "-") &&
-        MONTHS.includes(Number(event.date.slice(5, 7)) - 1)
-      );
-      renderAll();
-      renderMobileDay();
-      byId("load-status").textContent = appointments.length
-        ? appointments.length + " appuntamenti caricati"
-        : "Nessun appuntamento trovato per questo periodo.";
-      byId("load-status").classList.toggle("is-empty", appointments.length === 0);
-    } catch (error) {
-      console.error("Errore caricamento calendario:", error);
-      byId("load-status").textContent = "Non è stato possibile caricare gli appuntamenti. Riprova più tardi.";
-      byId("load-status").classList.add("is-error");
-    }
-  }
-
-  init();
-})();
-
-  </script>
 </body>
 </html>
