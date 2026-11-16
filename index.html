@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+
+<title>Calendario eventi | 2026</title>
+
+<style>
+:root {
+    --bg: #f3f5f8;
+    --surface: #ffffff;
+    --surface-soft: #f8fafc;
+    --text: #182230;
+    --muted: #8490a1;
+    --line: #e8ecf1;
+    --accent: #526fe5;
+    --event-bg: #edf1ff;
+    --event-border: #7188ed;
+    --shadow: 0 12px 40px rgba(24,34,48,.055);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(
+            ellipse at 15% 0%,
+            rgba(82,111,229,.09),
+            transparent 450px
+        ),
+        var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system,
+                 BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page {
+    width: min(1120px, calc(100% - 40px));
+    margin: auto;
+    padding: 52px 0 70px;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    margin: 0;
+    font-weight: 760;
+}
+
+.subtitle {
+    color: var(--muted);
+    margin: 12px 0 34px;
+    font-size: 15px;
+}
+
+.months {
+    display: grid;
+    gap: 26px;
+}
+
+.month-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.month-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 26px;
+    border-bottom: 1px solid var(--line);
+}
+
+.month-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 720;
+    text-transform: capitalize;
+    letter-spacing: -.025em;
+}
+
+.month-number {
+    color: #a0a9b7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.weekday {
+    padding: 13px 4px;
+    text-align: center;
+    background: var(--surface-soft);
+    border-bottom: 1px solid var(--line);
+    color: #929cac;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.day {
+    min-width: 0;
+    min-height: 125px;
+    padding: 11px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: white;
+}
+
+.day:nth-child(7n) {
+    border-right: 0;
+}
+
+.day.weekend {
+    background: #fcfcfe;
+}
+
+.day.empty {
+    background: #fafbfd;
+}
+
+.day-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    color: #3f4b5b;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.day.today .day-number {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 3px 8px rgba(82,111,229,.25);
+}
+
+/* Appuntamenti */
+
+.events {
+    display: grid;
+    gap: 6px;
+    margin-top: 9px;
+}
+
+.event {
+    padding: 7px 8px;
+    color: #34456f;
+    background: var(--event-bg);
+    border-left: 3px solid var(--event-border);
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 3px 0;
+    color: #9aa4b2;
+    font-size: 11px;
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+    .page {
+        width: calc(100% - 20px);
+        padding: 30px 0 42px;
+    }
+
+    .months {
+        gap: 18px;
+    }
+
+    .month-card {
+        border-radius: 13px;
+    }
+
+    .month-header {
+        padding: 18px 15px;
+    }
+
+    .month-title {
+        font-size: 19px;
+    }
+
+    .day {
+        min-height: 94px;
+        padding: 7px 5px;
+    }
+
+    .day-number {
+        width: 23px;
+        height: 23px;
+        font-size: 11px;
+    }
+
+    .event {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .weekday {
+        padding: 11px 2px;
+        font-size: 9px;
+        letter-spacing: .03em;
+    }
+}
+
+@media (max-width: 420px) {
+    .day {
+        min-height: 82px;
+        padding: 5px 3px;
+    }
+
+    .event {
+        font-size: 9px;
+        padding: 4px;
+    }
+
+    .weekday {
+        font-size: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+    <div class="eyebrow">Calendario eventi</div>
+
+    <h1>Novembre — Dicembre 2026</h1>
+
+    <p class="subtitle">
+        Tutti gli appuntamenti, in un unico calendario.
+    </p>
+
+    <div class="months">
+
+        <section class="month-card">
+            <div class="month-header">
+                <h2 class="month-title">Novembre 2026</h2>
+                <span class="month-number">11 / 12</span>
+            </div>
+            <div class="calendar" id="calendar-11"></div>
+        </section>
+
+        <section class="month-card">
+            <div class="month-header">
+                <h2 class="month-title">Dicembre 2026</h2>
+                <span class="month-number">12 / 12</span>
+            </div>
+            <div class="calendar" id="calendar-12"></div>
+        </section>
+
+    </div>
+
+    <footer>
+        <span>2026</span>
+        <span>◆ Appuntamenti</span>
+    </footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<script>
+
+const YEAR = 2026;
+const MONTHS = [10, 11];
+
+const WEEKDAYS = [
+    "Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"
+];
+
+const today = new Date();
+
+let appointments = [];
+
+
+/* Normalizzazione date */
+
+function dateKey(year, month, day) {
+    return `${year}-${String(month + 1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+}
+
+function normalizeDate(value) {
+
+    if (value instanceof Date && !isNaN(value)) {
+        return dateKey(
+            value.getFullYear(),
+            value.getMonth(),
+            value.getDate()
+        );
+    }
+
+    if (typeof value === "number") {
+        const parsed = XLSX.SSF.parse_date_code(value);
+
+        if (parsed) {
+            return dateKey(
+                parsed.y,
+                parsed.m - 1,
+                parsed.d
+            );
+        }
+    }
+
+    const input = String(value ?? "").trim();
+
+    let match = input.match(
+        /^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/
+    );
+
+    if (match) {
+        return dateKey(
+            Number(match[1]),
+            Number(match[2]) - 1,
+            Number(match[3])
+        );
+    }
+
+    match = input.match(
+        /^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/
+    );
+
+    if (match) {
+        return dateKey(
+            Number(match[3]),
+            Number(match[2]) - 1,
+            Number(match[1])
+        );
+    }
+
+    return "";
+}
+
+
+/* Generazione calendario */
+
+function renderMonth(month) {
+
+    const container = document.getElementById(
+        `calendar-${month + 1}`
+    );
+
+    container.replaceChildren();
+
+    WEEKDAYS.forEach(label => {
+
+        const weekday = document.createElement("div");
+
+        weekday.className = "weekday";
+        weekday.textContent = label;
+
+        container.appendChild(weekday);
+
+    });
+
+    const firstOffset =
+        (new Date(YEAR, month, 1).getDay() + 6) % 7;
+
+    const daysInMonth =
+        new Date(YEAR, month + 1, 0).getDate();
+
+    const totalCells =
+        Math.ceil((firstOffset + daysInMonth) / 7) * 7;
+
+    for (let i = 0; i < totalCells; i++) {
+
+        const dayNumber = i - firstOffset + 1;
+
+        const inMonth =
+            dayNumber >= 1 && dayNumber <= daysInMonth;
+
+        const cell = document.createElement("div");
+
+        cell.className = "day";
+
+        if (!inMonth) {
+
+            cell.classList.add("empty");
+
+            container.appendChild(cell);
+
+            continue;
+        }
+
+        const weekdayIndex = i % 7;
+
+        if (weekdayIndex >= 5) {
+            cell.classList.add("weekend");
+        }
+
+        if (
+            today.getFullYear() === YEAR &&
+            today.getMonth() === month &&
+            today.getDate() === dayNumber
+        ) {
+            cell.classList.add("today");
+        }
+
+        const number = document.createElement("span");
+
+        number.className = "day-number";
+        number.textContent = dayNumber;
+
+        cell.appendChild(number);
+
+        const key = dateKey(YEAR, month, dayNumber);
+
+        /*
+          Recupera TUTTI gli appuntamenti
+          associati alla giornata.
+        */
+
+        const dayEvents = appointments.filter(
+            item => item.day === key
+        );
+
+        if (dayEvents.length > 0) {
+
+            const list = document.createElement("div");
+
+            list.className = "events";
+
+            dayEvents.forEach(appointment => {
+
+                const event = document.createElement("div");
+
+                event.className = "event";
+                event.textContent = appointment.title;
+                event.title = appointment.title;
+
+                list.appendChild(event);
+
+            });
+
+            cell.appendChild(list);
+        }
+
+        container.appendChild(cell);
+    }
+}
+
+
+/* Caricamento automatico Excel */
+
+async function loadAppointments() {
+
+    try {
+
+        const response = await fetch(
+            "./spettacoli.xlsx",
+            { cache: "no-store" }
+        );
+
+        if (!response.ok) {
+            throw new Error("File Excel non trovato");
+        }
+
+        const buffer = await response.arrayBuffer();
+
+        const workbook = XLSX.read(
+            buffer,
+            {
+                type: "array",
+                cellDates: true
+            }
+        );
+
+        const sheet =
+            workbook.Sheets[workbook.SheetNames[0]];
+
+        const rows = XLSX.utils.sheet_to_json(
+            sheet,
+            { defval: "" }
+        );
+
+        appointments = rows.map(row => {
+
+            const keys = Object.keys(row);
+
+            const dayColumn = keys.find(
+                key => key.trim().toLowerCase() === "giorno"
+            );
+
+            const titleColumn = keys.find(
+                key => key.trim().toLowerCase() === "titolo"
+            );
+
+            return {
+
+                day: dayColumn
+                    ? normalizeDate(row[dayColumn])
+                    : "",
+
+                title: titleColumn
+                    ? String(row[titleColumn]).trim()
+                    : ""
+
+            };
+
+        }).filter(item => {
+
+            return (
+                item.day &&
+                item.title &&
+                item.day.startsWith("2026-") &&
+                ["11", "12"].includes(item.day.slice(5, 7))
+            );
+
+        });
+
+        renderAll();
+
+    } catch (error) {
+
+        console.error(
+            "Errore caricamento appuntamenti:",
+            error
+        );
+
+    }
+}
+
+
+/* Rendering */
+
+function renderAll() {
+
+    MONTHS.forEach(month => {
+        renderMonth(month);
+    });
+
+}
+
+renderAll();
+loadAppointments();
+
+</script>
+
+</body>
+</html>
