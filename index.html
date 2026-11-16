@@ -439,7 +439,7 @@ function openEventModal(appointment) {
         : "Non disponibile";
 
     const link = document.getElementById("modal-link");
-    const safeUrl = /^https?:\\/\\//i.test(appointment.link || "");
+    const safeUrl = typeof appointment.link === "string" && (appointment.link.startsWith("https://") || appointment.link.startsWith("http://"));
     link.hidden = !safeUrl;
     if (safeUrl) link.href = appointment.link;
     else link.removeAttribute("href");
@@ -627,7 +627,7 @@ async function loadAppointments() {
         let rows;
         const response = await fetch("./spettacoli.txt", { cache: "no-store" });
         if (response.ok) {
-            const content = (await response.text()).replace(/^\\uFEFF/, "");
+            const content = (await response.text()).replace(/^\uFEFF/, "");
             rows = parseDelimited(content);
             if (rows.length < 2) throw new Error("Calendario TXT vuoto o non valido");
             const headers = rows[0].map(value => value.trim());
