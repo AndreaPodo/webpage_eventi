@@ -1,0 +1,19 @@
+Giorno;Titolo;Luogo;Città;Link;Prezzo;Categoria;Fine;Orario
+16-11-2026;Antico Mercato di Santa Lucia;Centro storico;Bologna;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;Gratuito;Mercatino;27-12-2026;
+16-11-2026;Natale a Castenaso;Centro di Castenaso;Castenaso;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;;Mercatino / Natale;08-01-2027;
+16-11-2026;Another World If Possible;MAMbo – Museo d’Arte Moderna;Bologna;https://www.bolognawelcome.com/it/eventi/mostre-esposizioni/another-world-if-possible-mambo;Gratuito;Mostra;07-02-2027;
+16-11-2026;Umano, troppo umano;Cinquerosso Arte, Via Farini 9;Bologna;https://www.bolognawelcome.com/it/eventi/mostre-esposizioni/umano-troppo-umano-corpo-tempo-identita;Gratuito;Mostra;31-01-2027;
+19-11-2026;Natale a Porta Galliera;Porta Galliera;Bologna;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;;Mercatino / Natale;06-01-2027;
+20-11-2026;Living Library – Abitare, cittadinanza attiva e valori europei;Fondazione Yunus Italia, Via d’Azeglio 48;Bologna;https://www.bolognawelcome.com/it/eventi/varie/living-library-a-bologna;Gratuito;Incontro / comunità;;17:00
+21-11-2026;Mercato dei Vini dei Vignaioli Indipendenti;BolognaFiere;Bologna;https://mercatodeivini.it/;;Fiera / enogastronomia;23-11-2026;
+24-11-2026;Winterara;Centro di Calderara di Reno;Calderara di Reno;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;;Evento natalizio;06-01-2027;
+26-11-2026;WOW! La fiera con più passioni;BolognaFiere;Bologna;https://wowbologna.it/;;Fiera;29-11-2026;
+26-11-2026;Il Mondo Creativo;BolognaFiere;Bologna;https://ilmondocreativo.it/;;Fiera / hobby;29-11-2026;
+27-11-2026;Dal buio alla luce – Concerto in memoria delle vittime di femminicidio;Bologna;Bologna;https://www.bolognawelcome.com/it/eventi;;Evento culturale / musica; ; 
+04-12-2026;Famiglie a Teatro: Si riapre il sipario per i più piccoli;Pianura – sede da verificare;Pianura (BO);https://www.bolognawelcome.com/it/eventi;;Teatro ragazzi;06-12-2026;
+05-12-2026;Mercatini di Natale;Centro storico;Monterenzio;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;;Mercatino;08-12-2026;
+08-12-2026;Pranzo con ribollita;Loiano;Loiano;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;;Enogastronomia;;
+08-12-2026;Natale a Loiano;Centro di Loiano;Loiano;https://www.cittametropolitana.bo.it/sagrefeste/tutti_eventi;;Evento natalizio;19-12-2026;
+12-12-2026;San Giorgio WINtEr – Mercato di Natale di San Giorgio di Vino;Centro storico;San Giorgio di Piano;https://www.bolognawelcome.com/it/eventi/celebrazioni-ricorrenze/san-giorgio-winter;Gratuito;Mercatino / enogastronomia;13-12-2026;15:00
+20-12-2026;Corso di pasticceria – Il panettone farcito;Portici Academy, Via Zamboni 2;Bologna;https://www.bolognawelcome.com/it/eventi/food-and-wine/corso-di-pasticceria-il-panettone-gastronomico;100;Corso / workshop;;16:00
+31-12-2026;Gran gala di Capodanno con Matthew Lee – From 20’s to 20’s;Bologna;Bologna;https://www.bolognawelcome.com/it/eventi;;Capodanno / spettacolo;;
