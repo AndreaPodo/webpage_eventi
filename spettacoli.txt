@@ -7,7 +7,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 19-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/catalogo-nov2026;;danza
 19-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
 19-11-2026;ADDUE;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/addue?catid=29:humour;20;comicità
-19-11-2026;Monet. Una vita a colori;Teatro Duse;https://teatroduse.it/spettacoli/marco-goldin-monet-una-vita-a-colori/;;altro spettacolo dal vivo
+19-11-2026;Monet. Una vita a colori;Teatro Duse;https://teatroduse.it/spettacoli/marco-goldin-monet-una-vita-a-colori/;29;altro spettacolo dal vivo
 19-11-2026;CASA;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/casa-19nov2026;;teatro ragazzi
 19-11-2026;Teatro Aperto;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/teatro-testoni-ragazzi-dove-lo-sguardo-si-allarga;;laboratorio teatrale
 20-11-2026;Bolton;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/bolton-2026/;;concerto
@@ -22,11 +22,11 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 21-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
 21-11-2026;Bestiario idrico;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-marco-paolini-20-21-novembre-2026/;;prosa
 21-11-2026;Epstein Files - Tutto quello che il potere cerca di nascondere;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/alessandro-di-battista?catid=30:extra;;da verificare
-21-11-2026;Io me lo merito;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/adamo-romano-2?catid=29:humour;20;comicità
+21-11-2026;Io me lo merito;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/carlotta-spallino?catid=29:humour;20;comicità
 21-11-2026;BOW (studio);Teatro delle Moline;https://www.culturabologna.it/lang/it/events/bow-studio;;danza
 21-11-2026;Lo zar;Teatro Duse;https://teatroduse.it/spettacoli/vladimir-putin-stefano-massini/;25;prosa
 21-11-2026;CIKECIAK;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/cikeciak-nov2026;;teatro ragazzi
-22-11-2026;Blex;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/blex-2026/;;concerto
+22-11-2026;Blex;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/blex-2026/;10;concerto
 22-11-2026;Catalogo;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/catalogo-nov2026;;danza
 22-11-2026;Fosca;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/fosca;;teatro ragazzi
 22-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
@@ -86,7 +86,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 02-12-2026;Vinicio Capossela, Capovilla;Teatro Duse;https://teatroduse.it/spettacoli/vinicio-capossela-e-morte-non-avra-dominio/;49;concerto
 03-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-giorno-in-cui-mio-padre-mi-ha-insegnato-ad-andare-in-bicicletta;;prosa
 03-12-2026;Back to Hawkins;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-back-to-hawkins-3-dicembre-2026/;;altro spettacolo dal vivo
-03-12-2026;BAD RAGAZ;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/bad-ragaz?catid=27:musica;;concerto
+03-12-2026;BAD RAGAZ;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/bad-ragaz?catid=27:musica;15;concerto
 03-12-2026;Vinicio Capossela, Capovilla;Teatro Duse;https://teatroduse.it/spettacoli/vinicio-capossela-e-morte-non-avra-dominio/;49;concerto
 03-12-2026;Maccio Capatonda | Spettacolo Teatrale;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-maccio-capaonda-3-dicembre-2026/;;comicità
 04-12-2026;Il giorno in cui mio padre mi ha insegnato ad andare in bicicletta;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-giorno-in-cui-mio-padre-mi-ha-insegnato-ad-andare-in-bicicletta;;prosa
@@ -111,7 +111,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 09-12-2026;NEMICI COME PRIMA;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/nemici-come-prima?catid=28:prosa;29;prosa
 09-12-2026;Sei personaggi in cerca d’autore;Teatro Duse;https://teatroduse.it/spettacoli/sei-personaggi-in-cerca-d-autore/;25;prosa
 09-12-2026;Pablo Trincia | L’uomo sbagliato;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-pablo-trincia-9-dicembre-2026/;;spettacolo dal vivo
-10-12-2026;GHEMON;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/ghemon?catid=29:humour;;da verificare
+10-12-2026;GHEMON;Teatro Dehon;https://www.teatrodehon.it/index.php/spettacoli;;da verificare
 10-12-2026;Sei personaggi in cerca d’autore;Teatro Duse;https://teatroduse.it/spettacoli/sei-personaggi-in-cerca-d-autore/;25;prosa
 10-12-2026;Arisa | Live Tour;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-arisa-10-dicembre-2026/;;concerto
 11-12-2026;Angius, Grazia;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/angius-grazia-2026/;;concerto
@@ -119,18 +119,18 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 11-12-2026;Buongiorno, Ministro!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-buongiorno-ministro-11-12-dicembre-2026/;;prosa
 11-12-2026;MASSIMO BUBOLA & OF NEW TROLLS;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/massimo-bubola-of-new-trolls?catid=27:musica;30;concerto
 11-12-2026;Madre per sempre;Teatro Duse;https://teatroduse.it/spettacoli/madre-per-sempre-marta-barcelo/;23;prosa
-11-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;;comicità
+11-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;59;comicità
 12-12-2026;Cenerentola. L'arte, la scienza e la conoscenza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/cenerentola-l-arte-la-scienza-e-la-conoscenza;;teatro ragazzi
 12-12-2026;Buongiorno, Ministro!;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-buongiorno-ministro-11-12-dicembre-2026/;;prosa
 12-12-2026;VENERDÌ 13;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/venerdi-13-martina-colombari?catid=28:prosa;29;prosa
 12-12-2026;Madre per sempre;Teatro Duse;https://teatroduse.it/spettacoli/madre-per-sempre-marta-barcelo/;23;prosa
-12-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;;comicità
+12-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;59;comicità
 12-12-2026;UN ELEFANTE SI DONDOLAVA…;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/un-elefante-si-dondolava-dic2026;;teatro ragazzi
-13-12-2026;Sauer;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/sauer-2026/;;concerto
+13-12-2026;Sauer;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/sauer-2026/;10;concerto
 13-12-2026;La Bella Addormentata nel Bosco;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-baby-bofe-13-14-dicembre-2026/;;danza
 13-12-2026;VENERDÌ 13;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/venerdi-13-martina-colombari?catid=28:prosa;29;prosa
 13-12-2026;Madre per sempre;Teatro Duse;https://teatroduse.it/spettacoli/madre-per-sempre-marta-barcelo/;23;prosa
-13-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;;comicità
+13-12-2026;Enrico Brignano | Bello di mamma!;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-enrico-brignano-11-13-dicembre-2026/;59;comicità
 13-12-2026;Il cielo degli orsi;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/il-cielo-degli-orsi-13dic2026;;teatro ragazzi
 13-12-2026;UN ELEFANTE SI DONDOLAVA…;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/un-elefante-si-dondolava-dic2026;;teatro ragazzi
 14-12-2026;Cappella Neapolitana, Ian Bostridge, Antonio Florio;Auditorium Manzoni;https://www.musicainsiemebologna.it/event/cappella-neapolitana-ian-bostridge-antonio-florio/;;concerto
@@ -146,20 +146,20 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 18-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/faust-dic2026;;prosa
 18-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
 18-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
-18-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;;concerto
+18-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;35;concerto
 19-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/faust-dic2026;;prosa
 19-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
 19-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
-19-12-2026;THE FULL MONTY;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27:musica;;musical
+19-12-2026;THE FULL MONTY;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27;28;musical
 19-12-2026;A Christmas Carol | Il Musical;Teatro Duse;https://teatroduse.it/spettacoli/a-christmas-carol/;34.50;musical
-19-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;;concerto
+19-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;35;concerto
 19-12-2026;Soluzioni nascoste;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/soluzioni-nascoste;;teatro ragazzi
 20-12-2026;Concerto di Natale;Auditorium Manzoni;https://www.tcbo.it/evento/accademia/domenica-in-musica-concerto-di-natale-2026/;0;concerto
 20-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
 20-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
-20-12-2026;THE FULL MONTY;Teatro Dehon;https://teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27:musica;;musical
+20-12-2026;THE FULL MONTY;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27;28;musical
 20-12-2026;A Christmas Carol | Il Musical;Teatro Duse;https://teatroduse.it/spettacoli/a-christmas-carol/;34.50;musical
-20-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;;concerto
+20-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;35;concerto
 20-12-2026;Ho un pezzettino in gola;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/ho-un-pezzettino-in-gola;;teatro ragazzi
 20-12-2026;Soluzioni nascoste;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/soluzioni-nascoste;;teatro ragazzi
 23-12-2026;Cenerentola on Ice;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-cenerentola-on-ice-23-26-e-27-dicembre-2026/;;danza
@@ -181,34 +181,34 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 31-12-2026;Gran varietà di Capodanno;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-gran-varieta-di-capodanno-31-dicembre-2026/;;spettacolo dal vivo
 01-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
 02-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
-03-01-2027;Dal Maso, Mancini;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/dal-maso-mancini-2027/;;concerto
+03-01-2027;Dal Maso, Mancini;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/dal-maso-mancini-2027/;10;concerto
 03-01-2027;Classescion;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-vito-29-31-dic-e-2-3-gen/;;comicità
 03-01-2027;Il Pipistrello | Operetta di Johann Strauss;Teatro Duse;https://teatroduse.it/spettacoli/il-pipistrello-teatro-duse-bologna/;23;operetta
 05-01-2027;Bubbles Revolution;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-bubbles-revolution-5-6-gennaio-2027/;;danza
 05-01-2027;LO SCHIACCIANOCI;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/lo-schiaccianoci?catid=30:extra;29;danza
 05-01-2027;Una notte per Faber;Teatro Duse;https://teatroduse.it/spettacoli/una-notte-per-faber-bologna/;26.45;concerto
-05-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-winx-club-5-6-gennaio-2027/;;musical
+05-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-winx-club-5-6-gennaio-2027/;30.80;musical
 06-01-2027;Bubbles Revolution;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-bubbles-revolution-5-6-gennaio-2027/;;danza
 06-01-2027;Il libro della giungla;Teatro Duse;https://teatroduse.it/spettacoli/libro-della-giungla-fantateatro-teatro-duse/;;teatro ragazzi
-06-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-winx-club-5-6-gennaio-2027/;;musical
+06-01-2027;Winx Club: The Magic is Back;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-winx-club-5-6-gennaio-2027/;30.80;musical
 06-01-2027;CAPPUCCETTO ROSSO;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/cappuccetto-rosso-6gen2027;;teatro ragazzi
 07-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
 08-01-2027;Beatrice Rana;Auditorium Manzoni;https://www.musicainsiemebologna.it/event/beatrice-rana-4/;;concerto
 08-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
 08-01-2027;GIN GAME;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/gin-game?catid=28:prosa;29;prosa
 08-01-2027;La Mandragola;Teatro Duse;https://teatroduse.it/spettacoli/la-mandragola-machiavelli-guglielmo-ferro/;;prosa
-08-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;;musical
+08-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;40.80;musical
 09-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
 09-01-2027;Tutta colpa del K-POP;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-seoul-mafia-9-gennaio-2027/;;concerto
 09-01-2027;GIN GAME;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/gin-game?catid=28:prosa;29;prosa
 09-01-2027;La Mandragola;Teatro Duse;https://teatroduse.it/spettacoli/la-mandragola-machiavelli-guglielmo-ferro/;;prosa
-09-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;;musical
+09-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;40.80;musical
 09-01-2027;UN CAMION ROSSO DEI POMPIERI;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/un-camion-rosso-dei-pompieri-2026-27;;teatro ragazzi
 10-01-2027;Weigle;Auditorium Manzoni;https://www.tcbo.it/evento/concerto/weigle-2027/;;concerto
 10-01-2027;Angeli funamboli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/angeli-funamboli;;prosa
 10-01-2027;GIN GAME;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/gin-game?catid=28:prosa;29;prosa
 10-01-2027;La Mandragola;Teatro Duse;https://teatroduse.it/spettacoli/la-mandragola-machiavelli-guglielmo-ferro/;;prosa
-10-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;;musical
+10-01-2027;Aggiungi un posto a tavola;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-aggiungi-un-posto-a-tavola-8-10-gennaio-2027/;40.80;musical
 10-01-2027;LA BELLA O LA BESTIA;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/la-bella-o-la-bestia-10gen2027;;teatro ragazzi
 10-01-2027;UN CAMION ROSSO DEI POMPIERI;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/un-camion-rosso-dei-pompieri-2026-27;;teatro ragazzi
 11-01-2027;Perfetta;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-geppi-cucciari-11-gennaio-2027/;;comicità
@@ -230,7 +230,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 15-01-2027;Vitality;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/gabriele-cirilli?catid=29:humour;29;comicità
 15-01-2027;QUI;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/qui14-17gen2027;;prosa
 15-01-2027;Gli innamorati;Teatro Duse;https://teatroduse.it/spettacoli/gli-innamorati-goldoni-roberto-valerio/;;prosa
-15-01-2027;Michele Bravi | Commedia Musicale Tour;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-michele-bravi-15-gennaio-2027/;;concerto
+15-01-2027;Michele Bravi | Commedia Musicale Tour;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-michele-bravi-15-gennaio-2027/;;musical
 15-01-2027;Ultimo round;Teatro Testoni Ragazzi;https://www.culturabologna.it/lang/it/events/ultimo-round-storia-del-pugile-sinti-johann-rukelie;;prosa
 16-01-2027;Di madre in figlia;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/di-madre-in-figlia;;prosa
 16-01-2027;La moglie fantasma;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-la-moglie-fantasma-15-16-gennaio-2027/;;prosa
