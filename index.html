@@ -1,697 +1,80 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101827">
-
-<title>Calendario eventi | 2026</title>
-
-<style>
-:root {
-    --bg: #f3f5f8;
-    --surface: #ffffff;
-    --surface-soft: #f8fafc;
-    --text: #182230;
-    --muted: #8490a1;
-    --line: #e8ecf1;
-    --accent: #526fe5;
-    --event-bg: #edf1ff;
-    --event-border: #7188ed;
-    --shadow: 0 12px 40px rgba(24,34,48,.055);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background:
-        radial-gradient(
-            ellipse at 15% 0%,
-            rgba(82,111,229,.09),
-            transparent 450px
-        ),
-        var(--bg);
-    color: var(--text);
-    font-family: Inter, system-ui, -apple-system,
-                 BlinkMacSystemFont, "Segoe UI", sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-.page {
-    width: min(1120px, calc(100% - 40px));
-    margin: auto;
-    padding: 52px 0 70px;
-}
-
-.eyebrow {
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-}
-
-h1 {
-    font-size: clamp(32px, 5vw, 48px);
-    line-height: 1.1;
-    letter-spacing: -.045em;
-    margin: 0;
-    font-weight: 760;
-}
-
-.subtitle {
-    color: var(--muted);
-    margin: 12px 0 34px;
-    font-size: 15px;
-}
-
-.months {
-    display: grid;
-    gap: 26px;
-}
-
-.month-card {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.month-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 23px 26px;
-    border-bottom: 1px solid var(--line);
-}
-
-.month-title {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 720;
-    text-transform: capitalize;
-    letter-spacing: -.025em;
-}
-
-.month-number {
-    color: #a0a9b7;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .08em;
-}
-
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.weekday {
-    padding: 13px 4px;
-    text-align: center;
-    background: var(--surface-soft);
-    border-bottom: 1px solid var(--line);
-    color: #929cac;
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-}
-
-.day {
-    min-width: 0;
-    min-height: 125px;
-    padding: 11px;
-    border-right: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: white;
-}
-
-.day:nth-child(7n) {
-    border-right: 0;
-}
-
-.day.weekend {
-    background: #fcfcfe;
-}
-
-.day.empty {
-    background: #fafbfd;
-}
-
-.day-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 27px;
-    height: 27px;
-    border-radius: 50%;
-    color: #3f4b5b;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.day.today .day-number {
-    background: var(--accent);
-    color: white;
-    box-shadow: 0 3px 8px rgba(82,111,229,.25);
-}
-
-/* Appuntamenti */
-
-.events {
-    display: grid;
-    gap: 6px;
-    margin-top: 9px;
-}
-
-.event {
-    display: block;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-family: inherit;
-    padding: 7px 8px;
-    color: #34456f;
-    background: var(--event-bg);
-    border-left: 3px solid var(--event-border);
-    border-radius: 5px;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 0;
-}
-
-.event:hover {
-    background: #e1e8ff;
-}
-
-/* Finestra dettagli evento */
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: rgba(15, 23, 42, .48);
-    backdrop-filter: blur(3px);
-}
-
-.modal-backdrop.open {
-    display: flex;
-}
-
-.event-modal {
-    width: min(100%, 430px);
-    padding: 25px;
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    background: var(--surface);
-    box-shadow: 0 24px 80px rgba(15, 23, 42, .24);
-}
-
-.modal-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 18px;
-}
-
-.modal-title {
-    margin: 0;
-    font-size: 21px;
-    line-height: 1.25;
-    letter-spacing: -.025em;
-}
-
-.modal-close {
-    flex: 0 0 auto;
-    width: 32px;
-    height: 32px;
-    border: 0;
-    border-radius: 50%;
-    background: var(--surface-soft);
-    color: var(--muted);
-    font-size: 21px;
-    cursor: pointer;
-}
-
-.modal-details {
-    display: grid;
-    gap: 13px;
-    margin: 0;
-}
-
-.modal-details div {
-    display: grid;
-    gap: 3px;
-}
-
-.modal-details dt {
-    color: var(--muted);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-}
-
-.modal-details dd {
-    margin: 0;
-    color: var(--text);
-    font-size: 14px;
-    overflow-wrap: anywhere;
-}
-
-.modal-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--accent);
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.modal-link:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 22px 3px 0;
-    color: #9aa4b2;
-    font-size: 11px;
-}
-
-/* Responsive */
-
-@media (max-width: 720px) {
-    .page {
-        width: calc(100% - 20px);
-        padding: 30px 0 42px;
-    }
-
-    .months {
-        gap: 18px;
-    }
-
-    .month-card {
-        border-radius: 13px;
-    }
-
-    .month-header {
-        padding: 18px 15px;
-    }
-
-    .month-title {
-        font-size: 19px;
-    }
-
-    .day {
-        min-height: 94px;
-        padding: 7px 5px;
-    }
-
-    .day-number {
-        width: 23px;
-        height: 23px;
-        font-size: 11px;
-    }
-
-    .event {
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    .event-modal {
-        padding: 21px;
-    }
-
-    .weekday {
-        padding: 11px 2px;
-        font-size: 9px;
-        letter-spacing: .03em;
-    }
-}
-
-@media (max-width: 420px) {
-    .day {
-        min-height: 82px;
-        padding: 5px 3px;
-    }
-
-    .event {
-        font-size: 9px;
-        padding: 4px;
-    }
-
-    .weekday {
-        font-size: 8px;
-    }
-}
-</style>
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Calendario degli eventi e degli spettacoli a Bologna.">
+  <title>Eventi | Calendario 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./events.js" defer></script>
+  <script src="./app.js" defer></script>
 </head>
-
 <body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> La tua agenda culturale</p>
+        <h1>Eventi<span class="title-period">.</span></h1>
+        <p class="subtitle">Tutti gli appuntamenti, in un unico calendario.</p>
+      </div>
+      <div class="hero-meta">
+        <span class="meta-label">Stagione</span>
+        <strong>2026 <span>—</span> 27</strong>
+        <span class="meta-caption">Bologna e dintorni</span>
+      </div>
+    </header>
 
-<main class="page">
-
-    <div class="eyebrow">Calendario eventi</div>
-
-    <h1>Novembre — Dicembre 2026</h1>
-
-    <p class="subtitle">
-        Tutti gli appuntamenti, in un unico calendario.
-    </p>
-
-    <div class="months">
-
-        <section class="month-card">
-            <div class="month-header">
-                <h2 class="month-title">Novembre 2026</h2>
-                <span class="month-number">11 / 12</span>
-            </div>
-            <div class="calendar" id="calendar-11"></div>
-        </section>
-
-        <section class="month-card">
-            <div class="month-header">
-                <h2 class="month-title">Dicembre 2026</h2>
-                <span class="month-number">12 / 12</span>
-            </div>
-            <div class="calendar" id="calendar-12"></div>
-        </section>
-
-    </div>
-
-    <footer>
-        <span>2026</span>
-        <span>◆ Appuntamenti</span>
-    </footer>
-
-</main>
-
-<div class="modal-backdrop" id="event-modal-backdrop" role="presentation">
-    <section class="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
-        <div class="modal-top">
-            <h2 class="modal-title" id="modal-event-title"></h2>
-            <button class="modal-close" id="modal-close" type="button" aria-label="Chiudi">×</button>
+    <section class="calendar-section" aria-label="Calendario eventi">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Programmazione</p>
+          <h2>Prossimi appuntamenti</h2>
         </div>
-        <dl class="modal-details">
-            <div><dt>Teatro</dt><dd id="modal-theater"></dd></div>
-            <div><dt>Costo</dt><dd id="modal-price"></dd></div>
-        </dl>
-        <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Apri pagina evento ↗</a>
+        <span class="live-indicator"><span></span> Calendario aggiornato</span>
+      </div>
+
+      <div class="months" id="months">
+        <section class="month-card" aria-labelledby="month-november">
+          <header class="month-header">
+            <div><span class="month-index">01 / 02</span><h3 id="month-november">Novembre <span>2026</span></h3></div>
+            <span class="month-count" id="count-11">— eventi</span>
+          </header>
+          <div class="calendar" id="calendar-11" aria-label="Novembre 2026"></div>
+        </section>
+
+        <section class="month-card" aria-labelledby="month-december">
+          <header class="month-header">
+            <div><span class="month-index">02 / 02</span><h3 id="month-december">Dicembre <span>2026</span></h3></div>
+            <span class="month-count" id="count-12">— eventi</span>
+          </header>
+          <div class="calendar" id="calendar-12" aria-label="Dicembre 2026"></div>
+        </section>
+      </div>
+      <p class="load-status" id="load-status" role="status" aria-live="polite">Caricamento appuntamenti…</p>
     </section>
-</div>
 
-<script>
-
-const YEAR = 2026;
-const MONTHS = [10, 11];
-
-const WEEKDAYS = [
-    "Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"
-];
-
-const today = new Date();
-
-let appointments = [];
-
-function openEventModal(appointment) {
-    document.getElementById("modal-event-title").textContent = appointment.title || "Evento";
-    document.getElementById("modal-theater").textContent = appointment.theater || "Non indicato";
-    document.getElementById("modal-price").textContent = appointment.price
-        ? appointment.price
-        : "Non disponibile";
-
-    const link = document.getElementById("modal-link");
-    const safeUrl = typeof appointment.link === "string" && (appointment.link.startsWith("https://") || appointment.link.startsWith("http://"));
-    link.hidden = !safeUrl;
-    if (safeUrl) link.href = appointment.link;
-    else link.removeAttribute("href");
-
-    document.getElementById("event-modal-backdrop").classList.add("open");
-    document.getElementById("modal-close").focus();
-}
-
-function closeEventModal() {
-    document.getElementById("event-modal-backdrop").classList.remove("open");
-}
-
-document.getElementById("modal-close").addEventListener("click", closeEventModal);
-document.getElementById("event-modal-backdrop").addEventListener("click", event => {
-    if (event.target.id === "event-modal-backdrop") closeEventModal();
-});
-document.addEventListener("keydown", event => {
-    if (event.key === "Escape") closeEventModal();
-});
-
-
-/* Parsing CSV testuale con separatore ; e virgolette RFC 4180 */
-
-function parseDelimited(text, delimiter = ";") {
-    const rows = [];
-    let row = [], field = "", quoted = false;
-    for (let i = 0; i < text.length; i++) {
-        const ch = text[i];
-        if (quoted) {
-            if (ch === '"' && text[i + 1] === '"') {
-                field += '"';
-                i++;
-            } else if (ch === '"') {
-                quoted = false;
-            } else {
-                field += ch;
-            }
-        } else if (ch === '"') {
-            quoted = true;
-        } else if (ch === delimiter) {
-            row.push(field);
-            field = "";
-        } else if (ch === "\n" || ch === "\r") {
-            if (ch === "\r" && text[i + 1] === "\n") i++;
-            row.push(field);
-            if (row.some(value => value !== "")) rows.push(row);
-            row = [];
-            field = "";
-        } else {
-            field += ch;
-        }
-    }
-    row.push(field);
-    if (row.some(value => value !== "")) rows.push(row);
-    return rows;
-}
-
-function normalizeDate(value) {
-    const input = String(value ?? "").trim();
-    const match = input.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
-    if (!match) return "";
-    return `${match[3]}-${String(match[2]).padStart(2,"0")}-${String(match[1]).padStart(2,"0")}`;
-}
-
-
-/* Chiave data coerente con il formato ISO usato dal calendario */
-function dateKey(year, month, day) {
-    return `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-}
-
-/* Generazione calendario */
-
-function renderMonth(month) {
-
-    const container = document.getElementById(
-        `calendar-${month + 1}`
-    );
-
-    container.replaceChildren();
-
-    WEEKDAYS.forEach(label => {
-
-        const weekday = document.createElement("div");
-
-        weekday.className = "weekday";
-        weekday.textContent = label;
-
-        container.appendChild(weekday);
-
-    });
-
-    const firstOffset =
-        (new Date(YEAR, month, 1).getDay() + 6) % 7;
-
-    const daysInMonth =
-        new Date(YEAR, month + 1, 0).getDate();
-
-    const totalCells =
-        Math.ceil((firstOffset + daysInMonth) / 7) * 7;
-
-    for (let i = 0; i < totalCells; i++) {
-
-        const dayNumber = i - firstOffset + 1;
-
-        const inMonth =
-            dayNumber >= 1 && dayNumber <= daysInMonth;
-
-        const cell = document.createElement("div");
-
-        cell.className = "day";
-
-        if (!inMonth) {
-
-            cell.classList.add("empty");
-
-            container.appendChild(cell);
-
-            continue;
-        }
-
-        const weekdayIndex = i % 7;
-
-        if (weekdayIndex >= 5) {
-            cell.classList.add("weekend");
-        }
-
-        if (
-            today.getFullYear() === YEAR &&
-            today.getMonth() === month &&
-            today.getDate() === dayNumber
-        ) {
-            cell.classList.add("today");
-        }
-
-        const number = document.createElement("span");
-
-        number.className = "day-number";
-        number.textContent = dayNumber;
-
-        cell.appendChild(number);
-
-        const key = dateKey(YEAR, month, dayNumber);
-
-        /*
-          Recupera TUTTI gli appuntamenti
-          associati alla giornata.
-        */
-
-        const dayEvents = appointments.filter(
-            item => item.day === key
-        );
-
-        if (dayEvents.length > 0) {
-
-            const list = document.createElement("div");
-
-            list.className = "events";
-
-            dayEvents.forEach(appointment => {
-
-                const event = document.createElement("button");
-
-                event.type = "button";
-                event.className = "event";
-                event.textContent = appointment.title;
-                event.title = "Mostra dettagli: " + appointment.title;
-                event.addEventListener("click", () => openEventModal(appointment));
-
-                list.appendChild(event);
-
-            });
-
-            cell.appendChild(list);
-        }
-
-        container.appendChild(cell);
-    }
-}
-
-
-/* Caricamento automatico calendario TXT */
-
-async function loadAppointments() {
-    try {
-        let rows;
-        const response = await fetch("./spettacoli.txt", { cache: "no-store" });
-        if (response.ok) {
-            const content = (await response.text()).replace(/^\uFEFF/, "");
-            rows = parseDelimited(content);
-            if (rows.length < 2) throw new Error("Calendario TXT vuoto o non valido");
-            const headers = rows[0].map(value => value.trim());
-            const index = name => headers.findIndex(value => value.toLowerCase() === name.toLowerCase());
-            const dayIndex = index("Giorno");
-            const titleIndex = index("Titolo");
-            const visibleIndex = index("Visibile");
-            const theaterIndex = index("Teatro");
-            const linkIndex = index("Link");
-            const priceIndex = index("Prezzo");
-            if (dayIndex < 0 || titleIndex < 0 || visibleIndex < 0) throw new Error("Intestazioni TXT mancanti");
-            appointments = rows.slice(1).map(row => ({
-                day: normalizeDate(row[dayIndex]),
-                title: String(row[titleIndex] ?? "").trim(),
-                theater: theaterIndex >= 0 ? String(row[theaterIndex] ?? "").trim() : "",
-                link: linkIndex >= 0 ? String(row[linkIndex] ?? "").trim() : "",
-                price: priceIndex >= 0 ? String(row[priceIndex] ?? "").trim() : "",
-                visible: String(row[visibleIndex] ?? "").trim().toUpperCase()
-            })).filter(item => item.day && item.title && item.visible === "SI");
-        } else {
-            const legacy = await fetch("./spettacoli.xlsx", { cache: "no-store" });
-            if (!legacy.ok) throw new Error("Né spettacoli.txt né spettacoli.xlsx sono disponibili");
-            const workbook = XLSX.read(await legacy.arrayBuffer(), { type: "array" });
-            const sheet = workbook.Sheets[workbook.SheetNames[0]];
-            const data = XLSX.utils.sheet_to_json(sheet, { defval: "" });
-            appointments = data.map(row => {
-                const keys = Object.keys(row);
-                const get = name => keys.find(key => key.trim().toLowerCase() === name.toLowerCase());
-                const dayKey = get("Giorno"), titleKey = get("Titolo"), visibleKey = get("Visibile");
-                return {
-                    day: normalizeDate(row[dayKey]),
-                    title: String(row[titleKey] ?? "").trim(),
-                    theater: String(row[get("Teatro")] ?? "").trim(),
-                    link: String(row[get("Link")] ?? "").trim(),
-                    price: String(row[get("Prezzo")] ?? "").trim(),
-                    visible: String(row[visibleKey] ?? "SI").trim().toUpperCase()
-                };
-            }).filter(item => item.day && item.title && item.visible === "SI");
-        }
-        appointments = appointments.filter(item =>
-            item.day.startsWith(String(YEAR) + "-") &&
-            ["11", "12"].includes(item.day.slice(5, 7))
-        );
-        renderAll();
-    } catch (error) {
-        console.error("Errore caricamento appuntamenti:", error);
-    }
-}
-
-
-/* Rendering */
-
-function renderAll() {
-
-    MONTHS.forEach(month => {
-        renderMonth(month);
-    });
-
-}
-
-renderAll();
-loadAppointments();
-
-</script>
-
+    <footer class="site-footer">
+      <span>EVENTI <span class="footer-mark">/</span> BOLOGNA</span>
+      <span>Una selezione di appuntamenti da non perdere.</span>
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="event-modal-backdrop" hidden>
+    <section class="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
+      <div class="modal-top">
+        <div><p class="modal-kicker">Dettagli appuntamento</p><h2 class="modal-title" id="modal-event-title"></h2></div>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Chiudi finestra">×</button>
+      </div>
+      <dl class="modal-details">
+        <div><dt>Teatro / luogo</dt><dd id="modal-theater"></dd></div>
+        <div><dt>Costo</dt><dd id="modal-price"></dd></div>
+      </dl>
+      <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Vai alla pagina dell'evento <span>↗</span></a>
+    </section>
+  </div>
 </body>
 </html>
