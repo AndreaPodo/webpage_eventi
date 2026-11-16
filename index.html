@@ -130,7 +130,7 @@
 
       const details = document.createElement("dl");
       details.className = "modal-details";
-      [["Teatro / luogo", appointment.theater || "Non indicato"], ["Prezzo", appointment.price || "Non indicato"]].forEach(([label, value]) => {
+      [["Categoria", appointment.category || "Da classificare"], ["Teatro / luogo", appointment.theater || "Non indicato"], ["Prezzo", appointment.price || "Non indicato"]].forEach(([label, value]) => {
         const wrapper = document.createElement("div");
         const term = document.createElement("dt");
         term.textContent = label;
@@ -239,8 +239,14 @@
           const event = document.createElement("button");
           event.type = "button";
           event.className = "event";
-          event.textContent = appointment.title;
-          event.title = "Mostra dettagli: " + appointment.title;
+          const eventName = document.createElement("span");
+          eventName.className = "event-name";
+          eventName.textContent = appointment.title;
+          const eventCategory = document.createElement("span");
+          eventCategory.className = "event-category";
+          eventCategory.textContent = appointment.category || "Da classificare";
+          event.append(eventName, eventCategory);
+          event.title = "Categoria: " + (appointment.category || "Da classificare") + " — Mostra dettagli: " + appointment.title;
           event.addEventListener("click", clickEvent => { clickEvent.stopPropagation(); openEventModal(appointment); });
           list.appendChild(event);
         });
@@ -292,6 +298,10 @@
       title.className = "mobile-event-title";
       title.textContent = appointment.title || "Evento";
 
+      const category = document.createElement("span");
+      category.className = "event-category";
+      category.textContent = appointment.category || "Da classificare";
+
       const venue = document.createElement("p");
       venue.className = "mobile-event-venue";
       venue.textContent = appointment.theater || "Luogo non indicato";
@@ -310,7 +320,7 @@
       details.addEventListener("click", () => openEventModal(appointment));
 
       footer.append(price, details);
-      card.append(title, venue, footer);
+      card.append(title, category, venue, footer);
       list.appendChild(card);
     });
 
@@ -341,7 +351,6 @@
     renderMobileDay();
     try {
       appointments = (await window.EventData.load()).filter(event =>
-        event.visible &&
         event.date.startsWith(YEAR + "-") &&
         MONTHS.includes(Number(event.date.slice(5, 7)) - 1)
       );
