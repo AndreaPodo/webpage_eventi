@@ -30,7 +30,7 @@
     const place = document.createElement("p"); place.className = compact ? "mobile-event-venue" : "event-place";
     place.textContent = [e.venue,e.city].filter(Boolean).join(" · ") || "Luogo da definire"; card.appendChild(place);
     const meta = document.createElement("div"); meta.className = compact ? "mobile-event-footer" : "event-meta";
-    const info = document.createElement("span"); info.textContent = [e.time,e.price].filter(Boolean).join(" · ") || (e.endDate && e.endDate !== e.date ? "Fino al " + fmt(parse(e.endDate),{day:"numeric",month:"long"}) : "");
+    const info = document.createElement("span"); info.textContent = [e.time,e.price].filter(Boolean).join(" · ");
     if (e.endDate && e.endDate !== e.date) info.textContent += (info.textContent ? " · " : "") + "fino al " + fmt(parse(e.endDate),{day:"numeric",month:"long",year:"numeric"});
     meta.appendChild(info);
     const url = safeLink(e.link);
