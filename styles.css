@@ -332,3 +332,101 @@ h1 {
 .modal-event-card .modal-details dd { font-size: 13px; }
 .modal-event-card .modal-link { margin-top: 14px; }
 .modal-empty { margin: 0; color: var(--muted-strong); font-size: 13px; }
+
+
+/* Mobile agenda: one day at a time, while desktop keeps the monthly grid. */
+.mobile-day-view { display: none; }
+
+@media (max-width: 760px) {
+  .months { display: none; }
+  .mobile-day-view {
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 17px;
+    background: linear-gradient(145deg, rgba(20, 30, 48, .98), rgba(14, 22, 36, .98));
+    box-shadow: var(--shadow);
+  }
+  .mobile-day-navigation {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr) 46px;
+    align-items: center;
+    gap: 10px;
+    min-height: 116px;
+    padding: 17px 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .day-nav-button {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(180, 170, 255, .22);
+    border-radius: 13px;
+    background: var(--accent-soft);
+    color: var(--accent-bright);
+    cursor: pointer;
+    font: 400 32px/1 "DM Sans", sans-serif;
+    transition: background .18s ease, opacity .18s ease;
+  }
+  .day-nav-button:hover:not(:disabled) { background: rgba(154, 140, 255, .25); }
+  .day-nav-button:disabled { opacity: .28; cursor: not-allowed; }
+  .mobile-day-heading { min-width: 0; text-align: center; }
+  .mobile-day-kicker {
+    margin: 0 0 7px;
+    color: var(--teal);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .mobile-day-heading h3 {
+    margin: 0;
+    color: var(--text);
+    font: 700 clamp(16px, 4.5vw, 20px)/1.25 Manrope, sans-serif;
+    text-transform: capitalize;
+  }
+  .mobile-day-count { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; }
+  .mobile-day-events { display: grid; gap: 11px; padding: 14px; }
+  .mobile-event-card {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 11px;
+    background: rgba(255, 255, 255, .025);
+  }
+  .mobile-event-title {
+    margin: 0;
+    color: var(--text);
+    font: 700 15px/1.4 Manrope, sans-serif;
+  }
+  .mobile-event-venue { margin: 8px 0 0; color: var(--muted-strong); font-size: 12px; }
+  .mobile-event-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .mobile-event-price { color: var(--muted); font-size: 11px; }
+  .mobile-event-details {
+    padding: 8px 12px;
+    border: 1px solid rgba(180, 170, 255, .25);
+    border-radius: 8px;
+    background: var(--accent-soft);
+    color: var(--accent-bright);
+    cursor: pointer;
+    font: 700 11px "DM Sans", sans-serif;
+  }
+  .mobile-event-details:hover { background: rgba(154, 140, 255, .24); }
+  .mobile-day-empty {
+    margin: 0;
+    padding: 28px 14px;
+    color: var(--muted-strong);
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
