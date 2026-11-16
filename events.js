@@ -1,165 +1,72 @@
-/* Event data loader
- * Restituisce sempre eventi normalizzati:
- * { date: "YYYY-MM-DD", title, theater, link, price, category }
- */
+/* Loader comune per spettacoli, concerti ed eventi. */
 (function (global) {
   "use strict";
-
-  const TEXT_FILE = "./spettacoli.txt";
-  const LEGACY_XLSX_FILE = "./spettacoli.xlsx";
-
-  function parseDelimited(source, delimiter = ";") {
-    const rows = [];
-    let row = [], field = "", quoted = false;
-
+  const CONFIG = {
+    spettacoli: { file: "./spettacoli.txt", start: "2026-11-16", end: "2026-12-31", label: "Spettacoli" },
+    concerti: { file: "./concerti.txt", start: "2026-11-16", end: "2027-04-27", label: "Concerti" },
+    eventi: { file: "./eventi.txt", start: "2026-11-16", end: "2026-12-31", label: "Eventi" }
+  };
+  function parseRows(source) {
+    const rows = []; let row = [], field = "", quoted = false;
     for (let i = 0; i < source.length; i++) {
       const ch = source[i];
       if (quoted) {
-        if (ch === '"' && source[i + 1] === '"') {
-          field += '"';
-          i++;
-        } else if (ch === '"') {
-          quoted = false;
-        } else {
-          field += ch;
-        }
-      } else if (ch === '"') {
-        quoted = true;
-      } else if (ch === delimiter) {
-        row.push(field);
-        field = "";
-      } else if (ch === "\n" || ch === "\r") {
+        if (ch === '"' && source[i + 1] === '"') { field += '"'; i++; }
+        else if (ch === '"') quoted = false;
+        else field += ch;
+      } else if (ch === '"') quoted = true;
+      else if (ch === ";") { row.push(field); field = ""; }
+      else if (ch === "\n" || ch === "\r") {
         if (ch === "\r" && source[i + 1] === "\n") i++;
-        row.push(field);
-        if (row.some(value => value.trim() !== "")) rows.push(row);
-        row = [];
-        field = "";
-      } else {
-        field += ch;
-      }
+        row.push(field); if (row.some(v => v.trim())) rows.push(row);
+        row = []; field = "";
+      } else field += ch;
     }
-
-    row.push(field);
-    if (row.some(value => value.trim() !== "")) rows.push(row);
+    row.push(field); if (row.some(v => v.trim())) rows.push(row);
     return rows;
   }
-
-  function normalizeDate(value) {
-    if (value instanceof Date && !Number.isNaN(value.getTime())) {
-      return toIsoDate(value.getFullYear(), value.getMonth() + 1, value.getDate());
-    }
-
-    const input = String(value ?? "").trim();
-    let match = input.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
-    if (match) return toIsoDate(Number(match[3]), Number(match[2]), Number(match[1]));
-
-    match = input.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/);
-    if (match) return toIsoDate(Number(match[1]), Number(match[2]), Number(match[3]));
-
+  function iso(value) {
+    const s = String(value || "").trim();
+    let m = s.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+    if (m) return valid(+m[3], +m[2], +m[1]);
+    m = s.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/);
+    if (m) return valid(+m[1], +m[2], +m[3]);
     return "";
   }
-
-  function toIsoDate(year, month, day) {
-    const date = new Date(year, month - 1, day);
-    if (date.getFullYear() !== year || date.getMonth() !== month - 1 || date.getDate() !== day) return "";
-    return [year, String(month).padStart(2, "0"), String(day).padStart(2, "0")].join("-");
+  function valid(y, m, d) {
+    const date = new Date(y, m - 1, d);
+    return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d
+      ? [y, String(m).padStart(2,"0"), String(d).padStart(2,"0")].join("-") : "";
   }
-
-  function headerIndex(headers, name) {
-    return headers.findIndex(value => String(value).trim().toLocaleLowerCase("it") === name.toLocaleLowerCase("it"));
+  function normHeaders(row) { return row.map(v => String(v).replace(/^\uFEFF/,"").trim().toLocaleLowerCase("it")); }
+  function pick(row, headers, names) {
+    for (const name of names) { const i = headers.indexOf(name.toLocaleLowerCase("it")); if (i >= 0) return String(row[i] || "").trim(); }
+    return "";
   }
-
-  function normalizeRows(rows) {
+  async function load(key) {
+    const cfg = CONFIG[key];
+    if (!cfg) throw new Error("Sezione sconosciuta: " + key);
+    const response = await fetch(cfg.file, { cache: "no-store" });
+    if (!response.ok) throw new Error(cfg.file + " non disponibile (HTTP " + response.status + ")");
+    const rows = parseRows((await response.text()).replace(/^\uFEFF/,""));
     if (!rows.length) return [];
-    const headers = rows[0].map(value => String(value).replace(/^\uFEFF/, "").trim());
-    const indexes = {
-      date: headerIndex(headers, "Giorno"),
-      title: headerIndex(headers, "Titolo"),
-      theater: headerIndex(headers, "Teatro"),
-      link: headerIndex(headers, "Link"),
-      price: headerIndex(headers, "Prezzo"),
-      category: headerIndex(headers, "Categoria")
-    };
-
-    if (indexes.date < 0 || indexes.title < 0) {
-      throw new Error('Il file eventi deve contenere almeno le colonne "Giorno" e "Titolo".');
-    }
-
-    return rows.slice(1).map(row => normalizeEvent({
-      date: row[indexes.date],
-      title: row[indexes.title],
-      theater: indexes.theater >= 0 ? row[indexes.theater] : "",
-      link: indexes.link >= 0 ? row[indexes.link] : "",
-      price: indexes.price >= 0 ? row[indexes.price] : "",
-      category: indexes.category >= 0 ? row[indexes.category] : ""
-    })).filter(event => event.date && event.title);
-  }
-
-  function normalizeEvent(event) {
-    return {
-      date: normalizeDate(event.date),
-      title: String(event.title ?? "").trim(),
-      theater: String(event.theater ?? "").trim(),
-      link: String(event.link ?? "").trim(),
-      price: String(event.price ?? "").trim(),
-      category: String(event.category ?? "").trim() || "Da classificare"
-    };
-  }
-
-  async function loadTextFile() {
-    const response = await fetch(TEXT_FILE, { cache: "no-store" });
-    if (!response.ok) throw new Error("spettacoli.txt non disponibile (HTTP " + response.status + ")");
-    const source = (await response.text()).replace(/^\uFEFF/, "");
-    return normalizeRows(parseDelimited(source));
-  }
-
-  function loadXlsxLibrary() {
-    if (global.XLSX) return Promise.resolve(global.XLSX);
-    return new Promise((resolve, reject) => {
-      const script = document.createElement("script");
-      script.src = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
-      script.onload = () => global.XLSX ? resolve(global.XLSX) : reject(new Error("Libreria XLSX non caricata"));
-      script.onerror = () => reject(new Error("Impossibile caricare la libreria XLSX"));
-      document.head.appendChild(script);
-    });
-  }
-
-  async function loadLegacyXlsx() {
-    const response = await fetch(LEGACY_XLSX_FILE, { cache: "no-store" });
-    if (!response.ok) throw new Error("spettacoli.xlsx non disponibile (HTTP " + response.status + ")");
-    const XLSX = await loadXlsxLibrary();
-    const workbook = XLSX.read(await response.arrayBuffer(), { type: "array", cellDates: true });
-    const sheet = workbook.Sheets[workbook.SheetNames[0]];
-    const records = XLSX.utils.sheet_to_json(sheet, { defval: "" });
-    const rows = records.map(record => {
-      const value = name => {
-        const key = Object.keys(record).find(item => item.trim().toLocaleLowerCase("it") === name.toLocaleLowerCase("it"));
-        return key ? record[key] : "";
+    const headers = normHeaders(rows.shift());
+    return rows.map(row => {
+      const start = iso(pick(row, headers, ["giorno","data"]));
+      const end = iso(pick(row, headers, ["fine","al","data fine"])) || start;
+      return {
+        date: start,
+        endDate: end,
+        title: pick(row, headers, ["titolo","evento"]),
+        venue: pick(row, headers, ["luogo","teatro","sede"]),
+        city: pick(row, headers, ["città","citta","comune"]),
+        link: pick(row, headers, ["link","url","fonte"]),
+        price: pick(row, headers, ["prezzo","costo","ingresso"]),
+        category: pick(row, headers, ["categoria","tipologia"]) || "Da classificare",
+        time: pick(row, headers, ["orario","ora"])
       };
-      return normalizeEvent({
-        date: value("Giorno"),
-        title: value("Titolo"),
-        theater: value("Teatro"),
-        link: value("Link"),
-        price: value("Prezzo"),
-        category: value("Categoria")
-      });
-    });
-    return rows.filter(event => event.date && event.title);
+    }).filter(e => e.date && e.title && e.date <= cfg.end && e.endDate >= cfg.start)
+      .sort((a,b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title, "it"));
   }
-
-  async function load() {
-    try {
-      return await loadTextFile();
-    } catch (textError) {
-      try {
-        console.warn("Lettura TXT non riuscita; provo il formato XLSX legacy.", textError);
-        return await loadLegacyXlsx();
-      } catch (xlsxError) {
-        throw new Error("Impossibile caricare il calendario. " + textError.message + " " + xlsxError.message);
-      }
-    }
-  }
-
-  global.EventData = Object.freeze({ load, normalizeDate });
+  global.EventData = Object.freeze({ load, config: CONFIG });
 })(window);
