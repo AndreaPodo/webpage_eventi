@@ -170,6 +170,11 @@ h1 {
 }
 
 .event {
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
     padding: 7px 8px;
     color: #34456f;
     background: var(--event-bg);
@@ -179,6 +184,105 @@ h1 {
     font-weight: 600;
     line-height: 1.35;
     overflow-wrap: anywhere;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.event:hover {
+    background: #e1e8ff;
+}
+
+/* Finestra dettagli evento */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 23, 42, .48);
+    backdrop-filter: blur(3px);
+}
+
+.modal-backdrop.open {
+    display: flex;
+}
+
+.event-modal {
+    width: min(100%, 430px);
+    padding: 25px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: 0 24px 80px rgba(15, 23, 42, .24);
+}
+
+.modal-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+}
+
+.modal-close {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.modal-details {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+}
+
+.modal-details div {
+    display: grid;
+    gap: 3px;
+}
+
+.modal-details dt {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.modal-details dd {
+    margin: 0;
+    color: var(--text);
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.modal-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -229,6 +333,10 @@ footer {
     .event {
         padding: 5px;
         font-size: 10px;
+    }
+
+    .event-modal {
+        padding: 21px;
     }
 
     .weekday {
@@ -296,6 +404,20 @@ footer {
 
 </main>
 
+<div class="modal-backdrop" id="event-modal-backdrop" role="presentation">
+    <section class="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
+        <div class="modal-top">
+            <h2 class="modal-title" id="modal-event-title"></h2>
+            <button class="modal-close" id="modal-close" type="button" aria-label="Chiudi">×</button>
+        </div>
+        <dl class="modal-details">
+            <div><dt>Teatro</dt><dd id="modal-theater"></dd></div>
+            <div><dt>Costo</dt><dd id="modal-price"></dd></div>
+        </dl>
+        <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Apri pagina evento ↗</a>
+    </section>
+</div>
+
 <script>
 
 const YEAR = 2026;
@@ -308,6 +430,35 @@ const WEEKDAYS = [
 const today = new Date();
 
 let appointments = [];
+
+function openEventModal(appointment) {
+    document.getElementById("modal-event-title").textContent = appointment.title || "Evento";
+    document.getElementById("modal-theater").textContent = appointment.theater || "Non indicato";
+    document.getElementById("modal-price").textContent = appointment.price
+        ? appointment.price
+        : "Non disponibile";
+
+    const link = document.getElementById("modal-link");
+    const safeUrl = /^https?:\\/\\//i.test(appointment.link || "");
+    link.hidden = !safeUrl;
+    if (safeUrl) link.href = appointment.link;
+    else link.removeAttribute("href");
+
+    document.getElementById("event-modal-backdrop").classList.add("open");
+    document.getElementById("modal-close").focus();
+}
+
+function closeEventModal() {
+    document.getElementById("event-modal-backdrop").classList.remove("open");
+}
+
+document.getElementById("modal-close").addEventListener("click", closeEventModal);
+document.getElementById("event-modal-backdrop").addEventListener("click", event => {
+    if (event.target.id === "event-modal-backdrop") closeEventModal();
+});
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeEventModal();
+});
 
 
 /* Parsing CSV testuale con separatore ; e virgolette RFC 4180 */
@@ -353,6 +504,11 @@ function normalizeDate(value) {
     return `${match[3]}-${String(match[2]).padStart(2,"0")}-${String(match[1]).padStart(2,"0")}`;
 }
 
+
+/* Chiave data coerente con il formato ISO usato dal calendario */
+function dateKey(year, month, day) {
+    return `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
 
 /* Generazione calendario */
 
@@ -444,11 +600,13 @@ function renderMonth(month) {
 
             dayEvents.forEach(appointment => {
 
-                const event = document.createElement("div");
+                const event = document.createElement("button");
 
+                event.type = "button";
                 event.className = "event";
                 event.textContent = appointment.title;
-                event.title = appointment.title;
+                event.title = "Mostra dettagli: " + appointment.title;
+                event.addEventListener("click", () => openEventModal(appointment));
 
                 list.appendChild(event);
 
@@ -477,10 +635,16 @@ async function loadAppointments() {
             const dayIndex = index("Giorno");
             const titleIndex = index("Titolo");
             const visibleIndex = index("Visibile");
+            const theaterIndex = index("Teatro");
+            const linkIndex = index("Link");
+            const priceIndex = index("Prezzo");
             if (dayIndex < 0 || titleIndex < 0 || visibleIndex < 0) throw new Error("Intestazioni TXT mancanti");
             appointments = rows.slice(1).map(row => ({
                 day: normalizeDate(row[dayIndex]),
                 title: String(row[titleIndex] ?? "").trim(),
+                theater: theaterIndex >= 0 ? String(row[theaterIndex] ?? "").trim() : "",
+                link: linkIndex >= 0 ? String(row[linkIndex] ?? "").trim() : "",
+                price: priceIndex >= 0 ? String(row[priceIndex] ?? "").trim() : "",
                 visible: String(row[visibleIndex] ?? "").trim().toUpperCase()
             })).filter(item => item.day && item.title && item.visible === "SI");
         } else {
@@ -496,6 +660,9 @@ async function loadAppointments() {
                 return {
                     day: normalizeDate(row[dayKey]),
                     title: String(row[titleKey] ?? "").trim(),
+                    theater: String(row[get("Teatro")] ?? "").trim(),
+                    link: String(row[get("Link")] ?? "").trim(),
+                    price: String(row[get("Prezzo")] ?? "").trim(),
                     visible: String(row[visibleKey] ?? "SI").trim().toUpperCase()
                 };
             }).filter(item => item.day && item.title && item.visible === "SI");
