@@ -65,7 +65,7 @@
         category: pick(row, headers, ["categoria","tipologia"]) || "Da classificare",
         time: pick(row, headers, ["orario","ora"])
       };
-    }).filter(e => e.date && e.title && e.date <= cfg.end && e.endDate >= cfg.start)
+    }).filter(e => e.date && e.title && e.date >= cfg.start && e.date <= cfg.end)
       .sort((a,b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title, "it"));
   }
   global.EventData = Object.freeze({ load, config: CONFIG });
