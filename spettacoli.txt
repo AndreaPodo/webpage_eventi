@@ -58,7 +58,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 28-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-berretto-a-sonagli-nov2026;;prosa
 28-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
 28-11-2026;Le Palestriti | Falling into dance, with Isadora;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/le-palestriti-i-falling-into-dance-with-isadora;;danza
-28-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;visita guidata
+28-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/storie-e-segreti-dell-arena-del-sole-2026;10;visita guidata
 28-11-2026;Il Cardinale Lambertini;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-il-cardinale-lambertini-28-novembre-2026/;;prosa
 28-11-2026;SPETTINATI;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/spettinati?catid=28:prosa;29;prosa
 28-11-2026;you, elsewhere;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/you-elsewhere;;danza
@@ -68,7 +68,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 29-11-2026;Il berretto a sonagli;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/il-berretto-a-sonagli-nov2026;;prosa
 29-11-2026;Istantedanza;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;danza
 29-11-2026;Le Palestriti | Falling into dance, with Isadora;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/le-palestriti-i-falling-into-dance-with-isadora;;danza
-29-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/agenda-eventi/rassegne-festival-stagioni/opera-aperta-teatro-arena-del-sole-e-teatro-delle-moline;;visita guidata
+29-11-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/storie-e-segreti-dell-arena-del-sole-2026;10;visita guidata
 29-11-2026;Occhi aperti! Serata tra amici;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-maurizio-nichetti29-novembre-2026/;;comicità
 29-11-2026;SPETTINATI;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/spettinati?catid=28:prosa;29;prosa
 29-11-2026;you, elsewhere;Teatro delle Moline;https://www.culturabologna.it/lang/it/events/you-elsewhere;;danza
@@ -148,6 +148,7 @@ Giorno;Titolo;Teatro;Link;Prezzo;Categoria
 18-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
 18-12-2026;Il Re Leone Live in Concert;Teatro EuropAuditorium;https://teatroeuropa.it/stagione-26-27-il-re-leone-live-in-concert-18-20-12-2026/;35;concerto
 19-12-2026;Faust;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/faust-dic2026;;prosa
+19-12-2026;Storie e segreti dell’Arena del Sole;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/storie-e-segreti-dell-arena-del-sole-2026;10;visita guidata
 19-12-2026;Taci, anzi parla. Diario di una femminista 1972-1977;Teatro Arena del Sole;https://www.culturabologna.it/lang/it/events/taci-anzi-parla-diario-di-una-femminista-1972-1977;;prosa
 19-12-2026;Fratello Sole, Sorella Luna;Teatro Celebrazioni;https://teatrocelebrazioni.it/stagione-26-27-fratello-sole-sorella-luna-18-20-dicembre-2026/;;prosa
 19-12-2026;THE FULL MONTY;Teatro Dehon;https://www.teatrodehon.it/index.php/component/content/article/the-full-monty?catid=27;28;musical
