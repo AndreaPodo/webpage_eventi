@@ -484,7 +484,7 @@ async function loadAppointments() {
     try {
 
         const response = await fetch(
-            "./spettacoli.xlsx",
+            "./Spettacoli.xlsx",
             { cache: "no-store" }
         );
 
@@ -515,11 +515,11 @@ async function loadAppointments() {
             const keys = Object.keys(row);
 
             const dayColumn = keys.find(
-                key => key.trim().toLowerCase() === "giorno"
+                key => key.trim().toLowerCase() === "Giorno"
             );
 
             const titleColumn = keys.find(
-                key => key.trim().toLowerCase() === "titolo"
+                key => key.trim().toLowerCase() === "Titolo"
             );
 
             return {
