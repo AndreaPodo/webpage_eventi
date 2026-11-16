@@ -53,6 +53,20 @@
           <div class="calendar" id="calendar-12" aria-label="Dicembre 2026"></div>
         </section>
       </div>
+
+      <section class="mobile-day-view" id="mobile-day-view" aria-label="Agenda giornaliera">
+        <div class="mobile-day-navigation">
+          <button class="day-nav-button" id="previous-day" type="button" aria-label="Giorno precedente">‹</button>
+          <div class="mobile-day-heading">
+            <p class="mobile-day-kicker" id="mobile-day-kicker">Agenda giornaliera</p>
+            <h3 id="mobile-day-title" aria-live="polite">Caricamento…</h3>
+            <span class="mobile-day-count" id="mobile-day-count"></span>
+          </div>
+          <button class="day-nav-button" id="next-day" type="button" aria-label="Giorno successivo">›</button>
+        </div>
+        <div class="mobile-day-events" id="mobile-day-events" aria-live="polite"></div>
+      </section>
+
       <p class="load-status" id="load-status" role="status" aria-live="polite">Caricamento appuntamenti…</p>
     </section>
 
@@ -79,6 +93,12 @@
   const MONTHS = [10, 11];
   const WEEKDAYS = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
   const today = new Date();
+  const mobileMinDate = new Date(YEAR, 10, 1);
+  const mobileMaxDate = new Date(YEAR, 11, 31);
+  const mobileSelectedDate = new Date(Math.min(
+    Math.max(new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime(), mobileMinDate.getTime()),
+    mobileMaxDate.getTime()
+  ));
   let appointments = [];
 
   const byId = id => document.getElementById(id);
@@ -236,7 +256,76 @@
     MONTHS.forEach(renderMonth);
   }
 
+  function renderMobileDay() {
+    const year = mobileSelectedDate.getFullYear();
+    const month = mobileSelectedDate.getMonth();
+    const day = mobileSelectedDate.getDate();
+    const key = dateKey(year, month, day);
+    const dayEvents = appointments.filter(item => item.date === key);
+    const formattedDate = new Intl.DateTimeFormat("it-IT", {
+      weekday: "long", day: "numeric", month: "long", year: "numeric"
+    }).format(mobileSelectedDate);
+    const isToday = today.getFullYear() === year &&
+      today.getMonth() === month && today.getDate() === day;
+
+    byId("mobile-day-title").textContent =
+      formattedDate.charAt(0).toLocaleUpperCase("it") + formattedDate.slice(1);
+    byId("mobile-day-kicker").textContent = isToday ? "Oggi" : "Agenda giornaliera";
+    byId("mobile-day-count").textContent =
+      dayEvents.length + (dayEvents.length === 1 ? " appuntamento" : " appuntamenti");
+
+    const list = byId("mobile-day-events");
+    list.replaceChildren();
+
+    if (!dayEvents.length) {
+      const empty = document.createElement("p");
+      empty.className = "mobile-day-empty";
+      empty.textContent = "Nessun appuntamento in programma per questa giornata.";
+      list.appendChild(empty);
+    }
+
+    dayEvents.forEach(appointment => {
+      const card = document.createElement("article");
+      card.className = "mobile-event-card";
+
+      const title = document.createElement("h4");
+      title.className = "mobile-event-title";
+      title.textContent = appointment.title || "Evento";
+
+      const venue = document.createElement("p");
+      venue.className = "mobile-event-venue";
+      venue.textContent = appointment.theater || "Luogo non indicato";
+
+      const footer = document.createElement("div");
+      footer.className = "mobile-event-footer";
+
+      const price = document.createElement("span");
+      price.className = "mobile-event-price";
+      price.textContent = appointment.price || "Prezzo non indicato";
+
+      const details = document.createElement("button");
+      details.className = "mobile-event-details";
+      details.type = "button";
+      details.textContent = "Dettagli";
+      details.addEventListener("click", () => openEventModal(appointment));
+
+      footer.append(price, details);
+      card.append(title, venue, footer);
+      list.appendChild(card);
+    });
+
+    byId("previous-day").disabled = mobileSelectedDate.getTime() <= mobileMinDate.getTime();
+    byId("next-day").disabled = mobileSelectedDate.getTime() >= mobileMaxDate.getTime();
+  }
+
+  function moveMobileDay(offset) {
+    mobileSelectedDate.setDate(mobileSelectedDate.getDate() + offset);
+    renderMobileDay();
+  }
+
   function initModal() {
+    byId("previous-day").addEventListener("click", () => moveMobileDay(-1));
+    byId("next-day").addEventListener("click", () => moveMobileDay(1));
     byId("modal-close").addEventListener("click", closeEventModal);
     byId("event-modal-backdrop").addEventListener("click", event => {
       if (event.target.id === "event-modal-backdrop") closeEventModal();
@@ -249,6 +338,7 @@
   async function init() {
     initModal();
     renderAll();
+    renderMobileDay();
     try {
       appointments = (await window.EventData.load()).filter(event =>
         event.visible &&
@@ -256,6 +346,7 @@
         MONTHS.includes(Number(event.date.slice(5, 7)) - 1)
       );
       renderAll();
+      renderMobileDay();
       byId("load-status").textContent = appointments.length
         ? appointments.length + " appuntamenti caricati"
         : "Nessun appuntamento trovato per questo periodo.";
